@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="SmartBiz.MDM.Presentation.ReportViewer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:rv="clr-namespace:Microsoft.Reporting.WinForms;assembly=Microsoft.ReportViewer.WinForms"     
+           Height="auto" Width="auto"
+          >
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources\TwilightBlue.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <DockPanel>
+        <DockPanel Width="200" >
+            <DockPanel   DockPanel.Dock="Top">
+                <Button Content="P" Foreground="White" FontFamily="Wingdings 3" DockPanel.Dock="Right" FontSize="25" Click="Button_Click" Width="40">
+                   
+                </Button>
+                <Border BorderBrush="{x:Null}" >
+                    <TextBox Padding="10" TextChanged="SearchBox_TextChanged" x:Name="SearchBox" Height="45" FontSize="15" VerticalAlignment="Bottom"></TextBox>
+                </Border>
+            </DockPanel>
+            <Label x:Name="CountLabel"   DockPanel.Dock="Bottom" ></Label>
+            <ListBox x:Name="listbox" SelectionChanged="listbox_SelectionChanged" Background="Transparent"
+                 FontSize="15" BorderBrush="{x:Null}"/>
+        </DockPanel>
+        <WindowsFormsHost>
+            <rv:ReportViewer x:Name="reportViewer"/>
+        </WindowsFormsHost>
+       
+    </DockPanel>
+</UserControl>

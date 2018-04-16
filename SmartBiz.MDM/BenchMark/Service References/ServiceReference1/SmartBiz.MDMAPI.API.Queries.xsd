@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.API.Queries" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.API.Queries" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="WarningQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmployeeNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WarningID" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WarningQuery" nillable="true" type="tns:WarningQuery" />
+  <xs:complexType name="HRQualificationQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmployeeNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="QualificationCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="QualificationYear" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HRQualificationQuery" nillable="true" type="tns:HRQualificationQuery" />
+  <xs:complexType name="HRWorkExperienceQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Company" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmployeeNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Years" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HRWorkExperienceQuery" nillable="true" type="tns:HRWorkExperienceQuery" />
+  <xs:complexType name="HRCashBenefitQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BenefitCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HRCashBenefitQuery" nillable="true" type="tns:HRCashBenefitQuery" />
+  <xs:complexType name="HRNonCashBenefitQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="NonBenefitCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HRNonCashBenefitQuery" nillable="true" type="tns:HRNonCashBenefitQuery" />
+  <xs:complexType name="HREmpCashBenefitsQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BenefitCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmpCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HREmpCashBenefitsQuery" nillable="true" type="tns:HREmpCashBenefitsQuery" />
+  <xs:complexType name="HREmpNonCashBenefitsQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmpCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NonBenefitCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HREmpNonCashBenefitsQuery" nillable="true" type="tns:HREmpNonCashBenefitsQuery" />
+  <xs:complexType name="BasicSalaryQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CurrencyID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmployeeNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SalaryGradeCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Year" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BasicSalaryQuery" nillable="true" type="tns:BasicSalaryQuery" />
+  <xs:complexType name="ReportingQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ReportingMode" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="SubordinateEmployeeNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SuperiorEmployeeNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ReportingQuery" nillable="true" type="tns:ReportingQuery" />
+  <xs:complexType name="JobSpecificationQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmployeeNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JobDescriptionCategoryCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="JobSpecificationQuery" nillable="true" type="tns:JobSpecificationQuery" />
+  <xs:complexType name="CurrencyHRQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CurrencyID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CurrencyHRQuery" nillable="true" type="tns:CurrencyHRQuery" />
+  <xs:complexType name="HRLanguageQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LangCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HRLanguageQuery" nillable="true" type="tns:HRLanguageQuery" />
+  <xs:complexType name="HREmpLanguageQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmpCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LangCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HREmpLanguageQuery" nillable="true" type="tns:HREmpLanguageQuery" />
+  <xs:complexType name="PrimaryTransactionQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DocumentCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FinancialYear" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="TransactionCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PrimaryTransactionQuery" nillable="true" type="tns:PrimaryTransactionQuery" />
+  <xs:complexType name="ProfitLostQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="TypeId" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProfitLostQuery" nillable="true" type="tns:ProfitLostQuery" />
+  <xs:complexType name="SpecialAccountQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="TypeId" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SpecialAccountQuery" nillable="true" type="tns:SpecialAccountQuery" />
+  <xs:complexType name="TransactionReferenceQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DocCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RefSeq" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="ReferenceText" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TransactionReferenceQuery" nillable="true" type="tns:TransactionReferenceQuery" />
+  <xs:complexType name="HRDependentQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DependentID" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="EmpNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HRDependentQuery" nillable="true" type="tns:HRDependentQuery" />
+  <xs:complexType name="CurrencyExchangeRateQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CalenderMonth" nillable="true" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="CalenderYear" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CurrencyExchangeRateQuery" nillable="true" type="tns:CurrencyExchangeRateQuery" />
+  <xs:complexType name="ProcessControlQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ProductCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProcessControlQuery" nillable="true" type="tns:ProcessControlQuery" />
+  <xs:complexType name="PeriodQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountingPeriod" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="FinancialYear" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ProductCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PeriodQuery" nillable="true" type="tns:PeriodQuery" />
+  <xs:complexType name="EmergencyQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmployeeNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmergencyQuery" nillable="true" type="tns:EmergencyQuery" />
+  <xs:complexType name="TransportQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmployeeNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TransportQuery" nillable="true" type="tns:TransportQuery" />
+  <xs:complexType name="TrainingQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmployeeNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TrainingID" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrainingQuery" nillable="true" type="tns:TrainingQuery" />
+  <xs:complexType name="EmployeeJSQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmployeeCategory" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmployeeNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmployeeType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmployeeJSQuery" nillable="true" type="tns:EmployeeJSQuery" />
+  <xs:complexType name="EmployeeTDQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmployeeExempt" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmployeeFlag" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="EmployeeNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmployeeTDQuery" nillable="true" type="tns:EmployeeTDQuery" />
+  <xs:complexType name="EmployeePCQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmployeeNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Province" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmployeePCQuery" nillable="true" type="tns:EmployeePCQuery" />
+  <xs:complexType name="EmployeeCDWDQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmployeeNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Province" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmployeeCDWDQuery" nillable="true" type="tns:EmployeeCDWDQuery" />
+  <xs:complexType name="EmployeeOCQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmployeeNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OfficeExtension" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmployeeOCQuery" nillable="true" type="tns:EmployeeOCQuery" />
+  <xs:complexType name="EmployeeEIMWSQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmployeeNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Location" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Payroll" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmployeeEIMWSQuery" nillable="true" type="tns:EmployeeEIMWSQuery" />
+  <xs:complexType name="NationalityQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="NationalityQuery" nillable="true" type="tns:NationalityQuery" />
+  <xs:complexType name="ReligionQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ReligionQuery" nillable="true" type="tns:ReligionQuery" />
+  <xs:complexType name="SalaryGradeQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SalaryGradeQuery" nillable="true" type="tns:SalaryGradeQuery" />
+  <xs:complexType name="CorporateTitleQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CorporateTitleQuery" nillable="true" type="tns:CorporateTitleQuery" />
+  <xs:complexType name="DesignationQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DesignationQuery" nillable="true" type="tns:DesignationQuery" />
+  <xs:complexType name="JDCategoryQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="JDCategoryQuery" nillable="true" type="tns:JDCategoryQuery" />
+  <xs:complexType name="FixedTxnAttributesQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DocCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GLCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TxCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FixedTxnAttributesQuery" nillable="true" type="tns:FixedTxnAttributesQuery" />
+  <xs:complexType name="LastTransactionInfoQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DocCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProductCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubSystemCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LastTransactionInfoQuery" nillable="true" type="tns:LastTransactionInfoQuery" />
+  <xs:complexType name="AccountSubTypeQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountSubType" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="AccountType" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AccountSubTypeQuery" nillable="true" type="tns:AccountSubTypeQuery" />
+  <xs:complexType name="AccountSubTypeCategoryQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountSubType" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="AccountSubTypeCategory" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="AccountType" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AccountSubTypeCategoryQuery" nillable="true" type="tns:AccountSubTypeCategoryQuery" />
+  <xs:complexType name="AccountTypeQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountType" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AccountTypeQuery" nillable="true" type="tns:AccountTypeQuery" />
+  <xs:complexType name="BankQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BankCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BankName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BankQuery" nillable="true" type="tns:BankQuery" />
+  <xs:complexType name="BankAccountQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountSEQNo" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="BankBranchCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BankCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BankAccountQuery" nillable="true" type="tns:BankAccountQuery" />
+  <xs:complexType name="BankBranchQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BankBranchCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BankCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BranchName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BankBranchQuery" nillable="true" type="tns:BankBranchQuery" />
+  <xs:complexType name="ControlledTransactionQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DocCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GLAccountCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TxnCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ControlledTransactionQuery" nillable="true" type="tns:ControlledTransactionQuery" />
+  <xs:complexType name="AgentBrokerSalesManQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AgentBrokerSalesManCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AgentBrokerSalesManQuery" nillable="true" type="tns:AgentBrokerSalesManQuery" />
+  <xs:complexType name="UnitConversionQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ConversionFactor" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="FromUnitCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ToUnitCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UnitConversionQuery" nillable="true" type="tns:UnitConversionQuery" />
+  <xs:complexType name="UnitDefinitionQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="MajorUnitCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StandardSyntax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UnitCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UnitDefinitionQuery" nillable="true" type="tns:UnitDefinitionQuery" />
+  <xs:complexType name="RegionQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="RegionCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RegionName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RegionQuery" nillable="true" type="tns:RegionQuery" />
+  <xs:complexType name="AreaQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AreaCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AreaName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RegionCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AreaQuery" nillable="true" type="tns:AreaQuery" />
+  <xs:complexType name="DocumentQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DocCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DocName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubSystemCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DocumentQuery" nillable="true" type="tns:DocumentQuery" />
+  <xs:complexType name="DocumentAttributesQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DocCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShortName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TxCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DocumentAttributesQuery" nillable="true" type="tns:DocumentAttributesQuery" />
+  <xs:complexType name="DocumentAttributesBankInfoQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DocCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FixedBankCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TxCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DocumentAttributesBankInfoQuery" nillable="true" type="tns:DocumentAttributesBankInfoQuery" />
+  <xs:complexType name="DocumentAttributesRefQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DocCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TxCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DocumentAttributesRefQuery" nillable="true" type="tns:DocumentAttributesRefQuery" />
+  <xs:complexType name="CostCenterQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CostCenterCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CostCenterDescription" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CostCenterQuery" nillable="true" type="tns:CostCenterQuery" />
+  <xs:complexType name="CostCenterwiseConfigurationQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BaseCurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CostCenterCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RevNo" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CostCenterwiseConfigurationQuery" nillable="true" type="tns:CostCenterwiseConfigurationQuery" />
+  <xs:complexType name="GeneralLedgerAccountQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AccountSubtype" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="AccountType" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GeneralLedgerAccountQuery" nillable="true" type="tns:GeneralLedgerAccountQuery" />
+  <xs:complexType name="CurrencyQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CurrencyName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CurrencyQuery" nillable="true" type="tns:CurrencyQuery" />
+  <xs:complexType name="EmployeeQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmployeeCallingName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmployeeNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmployeeTitle" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmployeeQuery" nillable="true" type="tns:EmployeeQuery" />
+  <xs:complexType name="EmployeePDQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmployeeNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Gender" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="MaritalStatus" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmployeePDQuery" nillable="true" type="tns:EmployeePDQuery" />
+  <xs:complexType name="EmployeeJIQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Confirm" type="xs:int" />
+      <xs:element minOccurs="0" name="EmployeeNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WorkingHours" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmployeeJIQuery" nillable="true" type="tns:EmployeeJIQuery" />
+</xs:schema>

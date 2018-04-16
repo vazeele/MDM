@@ -1,0 +1,1684 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="HR_EMP_TRAININGS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EMP_NUMBER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE" nillable="true" type="tns:HR_EMPLOYEE" />
+      <xs:element minOccurs="0" name="TN_DESC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TN_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="TN_STATUS" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="TN_TYPE" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_EMP_TRAININGS" nillable="true" type="tns:HR_EMP_TRAININGS" />
+  <xs:complexType name="HR_EMPLOYEE">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EMP_CALLING_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_FULLNAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_MAIDEN_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_MIDDLE_INI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_NAMES_BY_INI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_NUMBER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_OTHER_NAMES" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_SURNAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_TITLE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE_CDWD" nillable="true" type="tns:HR_EMPLOYEE_CDWD" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE_EIM_WS" nillable="true" type="tns:HR_EMPLOYEE_EIM_WS" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE_JI" nillable="true" type="tns:HR_EMPLOYEE_JI" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE_JS" nillable="true" type="tns:HR_EMPLOYEE_JS" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE_OC" nillable="true" type="tns:HR_EMPLOYEE_OC" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE_PC" nillable="true" type="tns:HR_EMPLOYEE_PC" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE_PD" nillable="true" type="tns:HR_EMPLOYEE_PD" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE_TD" nillable="true" type="tns:HR_EMPLOYEE_TD" />
+      <xs:element minOccurs="0" name="HR_EMP_ATTACHMENT" nillable="true" type="tns:ArrayOfHR_EMP_ATTACHMENT" />
+      <xs:element minOccurs="0" name="HR_EMP_BANK" nillable="true" type="tns:ArrayOfHR_EMP_BANK" />
+      <xs:element minOccurs="0" name="HR_EMP_CASH_BENEFIT" nillable="true" type="tns:ArrayOfHR_EMP_CASH_BENEFIT" />
+      <xs:element minOccurs="0" name="HR_EMP_EMERGENCY" nillable="true" type="tns:HR_EMP_EMERGENCY" />
+      <xs:element minOccurs="0" name="HR_EMP_MEMBER_DETAIL" nillable="true" type="tns:ArrayOfHR_EMP_MEMBER_DETAIL" />
+      <xs:element minOccurs="0" name="HR_EMP_NONCASH_BENEFIT" nillable="true" type="tns:ArrayOfHR_EMP_NONCASH_BENEFIT" />
+      <xs:element minOccurs="0" name="HR_EMP_PASSPORT" nillable="true" type="tns:ArrayOfHR_EMP_PASSPORT" />
+      <xs:element minOccurs="0" name="HR_EMP_QUALIFICATION" nillable="true" type="tns:ArrayOfHR_EMP_QUALIFICATION" />
+      <xs:element minOccurs="0" name="HR_EMP_RELATIONINFO" nillable="true" type="tns:ArrayOfHR_EMP_RELATIONINFO" />
+      <xs:element minOccurs="0" name="HR_EMP_RELATIONINFO1" nillable="true" type="tns:ArrayOfHR_EMP_RELATIONINFO" />
+      <xs:element minOccurs="0" name="HR_EMP_TRAININGS" nillable="true" type="tns:ArrayOfHR_EMP_TRAININGS" />
+      <xs:element minOccurs="0" name="HR_EMP_TRANSPORT" nillable="true" type="tns:HR_EMP_TRANSPORT" />
+      <xs:element minOccurs="0" name="HR_EMP_WARNINGS" nillable="true" type="tns:ArrayOfHR_EMP_WARNINGS" />
+      <xs:element minOccurs="0" name="HR_EMP_WORK_EXPERIENCE" nillable="true" type="tns:HR_EMP_WORK_EXPERIENCE" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_EMPLOYEE" nillable="true" type="tns:HR_EMPLOYEE" />
+  <xs:complexType name="HR_EMPLOYEE_CDWD">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EMP_NUMBER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_TEM_ADDRESS1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_TEM_ADDRESS2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_TEM_ADDRESS3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_TEM_CITY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_TEM_COU_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_TEM_DISTRICT_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_TEM_ELECTORATE_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_TEM_EMAIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_TEM_FAX" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_TEM_MOBILE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_TEM_POSTALCODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_TEM_PROVINCE_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_TEM_TELEPHONE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HR_COUNTRY" nillable="true" type="tns:HR_COUNTRY" />
+      <xs:element minOccurs="0" name="HR_DISTRICT" nillable="true" type="tns:HR_DISTRICT" />
+      <xs:element minOccurs="0" name="HR_ELECTORATE" nillable="true" type="tns:HR_ELECTORATE" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE" nillable="true" type="tns:HR_EMPLOYEE" />
+      <xs:element minOccurs="0" name="HR_PROVINCE" nillable="true" type="tns:HR_PROVINCE" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_EMPLOYEE_CDWD" nillable="true" type="tns:HR_EMPLOYEE_CDWD" />
+  <xs:complexType name="HR_COUNTRY">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="COU_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COU_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE_CDWD" nillable="true" type="tns:ArrayOfHR_EMPLOYEE_CDWD" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE_PC" nillable="true" type="tns:ArrayOfHR_EMPLOYEE_PC" />
+      <xs:element minOccurs="0" name="HR_PROVINCE" nillable="true" type="tns:ArrayOfHR_PROVINCE" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_COUNTRY" nillable="true" type="tns:HR_COUNTRY" />
+  <xs:complexType name="ArrayOfHR_EMPLOYEE_CDWD">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_EMPLOYEE_CDWD" nillable="true" type="tns:HR_EMPLOYEE_CDWD" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_EMPLOYEE_CDWD" nillable="true" type="tns:ArrayOfHR_EMPLOYEE_CDWD" />
+  <xs:complexType name="ArrayOfHR_EMPLOYEE_PC">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_EMPLOYEE_PC" nillable="true" type="tns:HR_EMPLOYEE_PC" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_EMPLOYEE_PC" nillable="true" type="tns:ArrayOfHR_EMPLOYEE_PC" />
+  <xs:complexType name="HR_EMPLOYEE_PC">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EMP_NUMBER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_PER_ADDRESS1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_PER_ADDRESS2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_PER_ADDRESS3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_PER_CITY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_PER_COU_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_PER_DISTRICT_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_PER_ELECTORATE_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_PER_EMAIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_PER_FAX" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_PER_MOBILE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_PER_POSTALCODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_PER_PROVINCE_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_PER_TELEPHONE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HR_COUNTRY" nillable="true" type="tns:HR_COUNTRY" />
+      <xs:element minOccurs="0" name="HR_DISTRICT" nillable="true" type="tns:HR_DISTRICT" />
+      <xs:element minOccurs="0" name="HR_ELECTORATE" nillable="true" type="tns:HR_ELECTORATE" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE" nillable="true" type="tns:HR_EMPLOYEE" />
+      <xs:element minOccurs="0" name="HR_PROVINCE" nillable="true" type="tns:HR_PROVINCE" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_EMPLOYEE_PC" nillable="true" type="tns:HR_EMPLOYEE_PC" />
+  <xs:complexType name="HR_DISTRICT">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DISTRICT_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DISTRICT_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE_CDWD" nillable="true" type="tns:ArrayOfHR_EMPLOYEE_CDWD" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE_PC" nillable="true" type="tns:ArrayOfHR_EMPLOYEE_PC" />
+      <xs:element minOccurs="0" name="HR_PROVINCE" nillable="true" type="tns:HR_PROVINCE" />
+      <xs:element minOccurs="0" name="PROVINCE_CODE" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_DISTRICT" nillable="true" type="tns:HR_DISTRICT" />
+  <xs:complexType name="HR_PROVINCE">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="COU_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HR_COUNTRY" nillable="true" type="tns:HR_COUNTRY" />
+      <xs:element minOccurs="0" name="HR_DISTRICT" nillable="true" type="tns:ArrayOfHR_DISTRICT" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE_CDWD" nillable="true" type="tns:ArrayOfHR_EMPLOYEE_CDWD" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE_PC" nillable="true" type="tns:ArrayOfHR_EMPLOYEE_PC" />
+      <xs:element minOccurs="0" name="PROVINCE_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PROVINCE_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_PROVINCE" nillable="true" type="tns:HR_PROVINCE" />
+  <xs:complexType name="ArrayOfHR_DISTRICT">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_DISTRICT" nillable="true" type="tns:HR_DISTRICT" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_DISTRICT" nillable="true" type="tns:ArrayOfHR_DISTRICT" />
+  <xs:complexType name="HR_ELECTORATE">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ELECTORATE_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ELECTORATE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE_CDWD" nillable="true" type="tns:ArrayOfHR_EMPLOYEE_CDWD" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE_PC" nillable="true" type="tns:ArrayOfHR_EMPLOYEE_PC" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_ELECTORATE" nillable="true" type="tns:HR_ELECTORATE" />
+  <xs:complexType name="ArrayOfHR_PROVINCE">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_PROVINCE" nillable="true" type="tns:HR_PROVINCE" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_PROVINCE" nillable="true" type="tns:ArrayOfHR_PROVINCE" />
+  <xs:complexType name="HR_EMPLOYEE_EIM_WS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EMP_NUMBER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_PAYROLLNO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE" nillable="true" type="tns:HR_EMPLOYEE" />
+      <xs:element minOccurs="0" name="HR_LOCATION" nillable="true" type="tns:HR_LOCATION" />
+      <xs:element minOccurs="0" name="LOC_CODE" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_EMPLOYEE_EIM_WS" nillable="true" type="tns:HR_EMPLOYEE_EIM_WS" />
+  <xs:complexType name="HR_LOCATION">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HR_EMPLOYEE_EIM_WS" nillable="true" type="tns:ArrayOfHR_EMPLOYEE_EIM_WS" />
+      <xs:element minOccurs="0" name="LOC_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LOC_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="STATUS_FLAG" nillable="true" type="xs:short" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_LOCATION" nillable="true" type="tns:HR_LOCATION" />
+  <xs:complexType name="ArrayOfHR_EMPLOYEE_EIM_WS">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_EMPLOYEE_EIM_WS" nillable="true" type="tns:HR_EMPLOYEE_EIM_WS" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_EMPLOYEE_EIM_WS" nillable="true" type="tns:ArrayOfHR_EMPLOYEE_EIM_WS" />
+  <xs:complexType name="HR_EMPLOYEE_JI">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CT_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DSG_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_CONFIRM_DATE" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EMP_CONFIRM_FLG" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="EMP_DATE_JOINED" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EMP_NUMBER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_RESIGN_DATE" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EMP_RETIRE_DATE" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EMP_WORKHOURS" nillable="true" type="xs:float" />
+      <xs:element minOccurs="0" name="HR_CORPORATE_TITLE" nillable="true" type="tns:HR_CORPORATE_TITLE" />
+      <xs:element minOccurs="0" name="HR_DESIGNATION" nillable="true" type="tns:HR_DESIGNATION" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE" nillable="true" type="tns:HR_EMPLOYEE" />
+      <xs:element minOccurs="0" name="HR_SALARY_GRADE" nillable="true" type="tns:HR_SALARY_GRADE" />
+      <xs:element minOccurs="0" name="SAL_GRD_CODE" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_EMPLOYEE_JI" nillable="true" type="tns:HR_EMPLOYEE_JI" />
+  <xs:complexType name="HR_CORPORATE_TITLE">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CT_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CT_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CT_TOPLEV_FLG" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="HR_DESIGNATION" nillable="true" type="tns:ArrayOfHR_DESIGNATION" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE_JI" nillable="true" type="tns:ArrayOfHR_EMPLOYEE_JI" />
+      <xs:element minOccurs="0" name="HR_SALARY_GRADE" nillable="true" type="tns:HR_SALARY_GRADE" />
+      <xs:element minOccurs="0" name="SAL_GRD_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="STATUS_FLAG" nillable="true" type="xs:short" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_CORPORATE_TITLE" nillable="true" type="tns:HR_CORPORATE_TITLE" />
+  <xs:complexType name="ArrayOfHR_DESIGNATION">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_DESIGNATION" nillable="true" type="tns:HR_DESIGNATION" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_DESIGNATION" nillable="true" type="tns:ArrayOfHR_DESIGNATION" />
+  <xs:complexType name="HR_DESIGNATION">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CT_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DSG_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DSG_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DSG_SNRMGT_FLG" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="HR_CORPORATE_TITLE" nillable="true" type="tns:HR_CORPORATE_TITLE" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE_JI" nillable="true" type="tns:ArrayOfHR_EMPLOYEE_JI" />
+      <xs:element minOccurs="0" name="STATUS_FLAG" nillable="true" type="xs:short" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_DESIGNATION" nillable="true" type="tns:HR_DESIGNATION" />
+  <xs:complexType name="ArrayOfHR_EMPLOYEE_JI">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_EMPLOYEE_JI" nillable="true" type="tns:HR_EMPLOYEE_JI" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_EMPLOYEE_JI" nillable="true" type="tns:ArrayOfHR_EMPLOYEE_JI" />
+  <xs:complexType name="HR_SALARY_GRADE">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CURRENCY_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HR_CORPORATE_TITLE" nillable="true" type="tns:ArrayOfHR_CORPORATE_TITLE" />
+      <xs:element minOccurs="0" name="HR_CURRENCY" nillable="true" type="tns:HR_CURRENCY" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE_JI" nillable="true" type="tns:ArrayOfHR_EMPLOYEE_JI" />
+      <xs:element minOccurs="0" name="SAL_GRD_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SAL_GRD_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="STATUS_FLAG" nillable="true" type="xs:short" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_SALARY_GRADE" nillable="true" type="tns:HR_SALARY_GRADE" />
+  <xs:complexType name="ArrayOfHR_CORPORATE_TITLE">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_CORPORATE_TITLE" nillable="true" type="tns:HR_CORPORATE_TITLE" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_CORPORATE_TITLE" nillable="true" type="tns:ArrayOfHR_CORPORATE_TITLE" />
+  <xs:complexType name="HR_CURRENCY">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CURRENCY_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CURRENCY_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HR_SALARY_GRADE" nillable="true" type="tns:ArrayOfHR_SALARY_GRADE" />
+      <xs:element minOccurs="0" name="STATUS_FLAG" nillable="true" type="xs:short" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_CURRENCY" nillable="true" type="tns:HR_CURRENCY" />
+  <xs:complexType name="ArrayOfHR_SALARY_GRADE">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_SALARY_GRADE" nillable="true" type="tns:HR_SALARY_GRADE" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_SALARY_GRADE" nillable="true" type="tns:ArrayOfHR_SALARY_GRADE" />
+  <xs:complexType name="HR_EMPLOYEE_JS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CAT_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_ACTIVE_HRM_FLG" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="EMP_CONTARCT_START_DATE" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EMP_CONTRACT_END_DATE" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EMP_CONT_TO_PERM_DATE" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EMP_CONT_TO_PERM_FLG" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="EMP_NUMBER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE" nillable="true" type="tns:HR_EMPLOYEE" />
+      <xs:element minOccurs="0" name="HR_JD_CATEGORY" nillable="true" type="tns:HR_JD_CATEGORY" />
+      <xs:element minOccurs="0" name="HR_JD_CATEGORY1" nillable="true" type="tns:HR_JD_CATEGORY" />
+      <xs:element minOccurs="0" name="STAFFCAT_CODE" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_EMPLOYEE_JS" nillable="true" type="tns:HR_EMPLOYEE_JS" />
+  <xs:complexType name="HR_JD_CATEGORY">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HR_EMPLOYEE_JS" nillable="true" type="tns:ArrayOfHR_EMPLOYEE_JS" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE_JS1" nillable="true" type="tns:ArrayOfHR_EMPLOYEE_JS" />
+      <xs:element minOccurs="0" name="JDCAT_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JDCAT_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="STATUS_FLAG" nillable="true" type="xs:short" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_JD_CATEGORY" nillable="true" type="tns:HR_JD_CATEGORY" />
+  <xs:complexType name="ArrayOfHR_EMPLOYEE_JS">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_EMPLOYEE_JS" nillable="true" type="tns:HR_EMPLOYEE_JS" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_EMPLOYEE_JS" nillable="true" type="tns:ArrayOfHR_EMPLOYEE_JS" />
+  <xs:complexType name="HR_EMPLOYEE_OC">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EMP_NUMBER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_OFFICE_EMAIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_OFFICE_EXTN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_OFFICE_PHONE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE" nillable="true" type="tns:HR_EMPLOYEE" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_EMPLOYEE_OC" nillable="true" type="tns:HR_EMPLOYEE_OC" />
+  <xs:complexType name="HR_EMPLOYEE_PD">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EMP_BIRTHDAY" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EMP_BIRTHPLACE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_BLOOD_GROUP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_GENDER" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="EMP_MARITAL_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_MARRIED_DATE" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EMP_NIC_DATE" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EMP_NIC_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_NUMBER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE" nillable="true" type="tns:HR_EMPLOYEE" />
+      <xs:element minOccurs="0" name="HR_NATIONALITY" nillable="true" type="tns:HR_NATIONALITY" />
+      <xs:element minOccurs="0" name="HR_RELIGION" nillable="true" type="tns:HR_RELIGION" />
+      <xs:element minOccurs="0" name="NAT_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RLG_CODE" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_EMPLOYEE_PD" nillable="true" type="tns:HR_EMPLOYEE_PD" />
+  <xs:complexType name="HR_NATIONALITY">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HR_EMPLOYEE_PD" nillable="true" type="tns:ArrayOfHR_EMPLOYEE_PD" />
+      <xs:element minOccurs="0" name="NAT_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NAT_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_NATIONALITY" nillable="true" type="tns:HR_NATIONALITY" />
+  <xs:complexType name="ArrayOfHR_EMPLOYEE_PD">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_EMPLOYEE_PD" nillable="true" type="tns:HR_EMPLOYEE_PD" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_EMPLOYEE_PD" nillable="true" type="tns:ArrayOfHR_EMPLOYEE_PD" />
+  <xs:complexType name="HR_RELIGION">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HR_EMPLOYEE_PD" nillable="true" type="tns:ArrayOfHR_EMPLOYEE_PD" />
+      <xs:element minOccurs="0" name="RLG_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RLG_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_RELIGION" nillable="true" type="tns:HR_RELIGION" />
+  <xs:complexType name="HR_EMPLOYEE_TD">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EMP_EPF_ELIGIBLE_FLG" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="EMP_EPF_EMPLOYEE_AMOUNT" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="EMP_EPF_EMPLOYER_AMOUNT" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="EMP_EPF_NUMBER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_EPF_PAYMENT_TYPE_FLG" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="EMP_ETF_DATE" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EMP_ETF_ELIGIBLE_FLG" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="EMP_ETF_EMPLOYEE_AMOUNT" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="EMP_ETF_NUMBER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_NUMBER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_PAYE_TAX_EXEMPT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_TAXONTAX_FLG" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="EMP_TAX_ID_NUMBER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE" nillable="true" type="tns:HR_EMPLOYEE" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_EMPLOYEE_TD" nillable="true" type="tns:HR_EMPLOYEE_TD" />
+  <xs:complexType name="ArrayOfHR_EMP_ATTACHMENT">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_EMP_ATTACHMENT" nillable="true" type="tns:HR_EMP_ATTACHMENT" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_EMP_ATTACHMENT" nillable="true" type="tns:ArrayOfHR_EMP_ATTACHMENT" />
+  <xs:complexType name="HR_EMP_ATTACHMENT">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EATTACH_ATTACHMENT" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="EATTACH_DESC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EATTACH_ID" type="xs:decimal" />
+      <xs:element minOccurs="0" name="EMP_NUMBER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE" nillable="true" type="tns:HR_EMPLOYEE" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_EMP_ATTACHMENT" nillable="true" type="tns:HR_EMP_ATTACHMENT" />
+  <xs:complexType name="ArrayOfHR_EMP_BANK">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_EMP_BANK" nillable="true" type="tns:HR_EMP_BANK" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_EMP_BANK" nillable="true" type="tns:ArrayOfHR_EMP_BANK" />
+  <xs:complexType name="HR_EMP_BANK">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BANK_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BBRANCH_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EBANK_ACC_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EBANK_ACC_TYPE_FLG" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="EBANK_AMOUNT" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="EBANK_ORDER" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="EMP_NUMBER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE" nillable="true" type="tns:HR_EMPLOYEE" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_EMP_BANK" nillable="true" type="tns:HR_EMP_BANK" />
+  <xs:complexType name="ArrayOfHR_EMP_CASH_BENEFIT">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_EMP_CASH_BENEFIT" nillable="true" type="tns:HR_EMP_CASH_BENEFIT" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_EMP_CASH_BENEFIT" nillable="true" type="tns:ArrayOfHR_EMP_CASH_BENEFIT" />
+  <xs:complexType name="HR_EMP_CASH_BENEFIT">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BEN_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EBEN_AMOUNT" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="EBEN_DATE_ASSIGNED" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EMP_NUMBER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HR_CASH_BENEFIT" nillable="true" type="tns:HR_CASH_BENEFIT" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE" nillable="true" type="tns:HR_EMPLOYEE" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_EMP_CASH_BENEFIT" nillable="true" type="tns:HR_EMP_CASH_BENEFIT" />
+  <xs:complexType name="HR_CASH_BENEFIT">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BEN_AMOUNT" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="BEN_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BEN_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HR_EMP_CASH_BENEFIT" nillable="true" type="tns:ArrayOfHR_EMP_CASH_BENEFIT" />
+      <xs:element minOccurs="0" name="STATUS_FLAG" nillable="true" type="xs:short" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_CASH_BENEFIT" nillable="true" type="tns:HR_CASH_BENEFIT" />
+  <xs:complexType name="HR_EMP_EMERGENCY">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EEMERG_CONT_PER_FULLNAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EEMERG_MOBILE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EEMERG_OFFICE_TELEPHONE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EEMERG_OFFICIAL_ADDRESS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EEMERG_PER_ADDRESS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EEMERG_RELATIONSHIP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EEMERG_RES_TELEPHONE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_NUMBER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE" nillable="true" type="tns:HR_EMPLOYEE" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_EMP_EMERGENCY" nillable="true" type="tns:HR_EMP_EMERGENCY" />
+  <xs:complexType name="ArrayOfHR_EMP_MEMBER_DETAIL">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_EMP_MEMBER_DETAIL" nillable="true" type="tns:HR_EMP_MEMBER_DETAIL" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_EMP_MEMBER_DETAIL" nillable="true" type="tns:ArrayOfHR_EMP_MEMBER_DETAIL" />
+  <xs:complexType name="HR_EMP_MEMBER_DETAIL">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EMEMB_COMMENCE_DATE" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EMEMB_RENEWAL_DATE" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EMEMB_SUBSCRIPT_AMOUNT" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="EMEMB_SUBSCRIPT_OWNERSHIP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_NUMBER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE" nillable="true" type="tns:HR_EMPLOYEE" />
+      <xs:element minOccurs="0" name="HR_MEMBERSHIP" nillable="true" type="tns:HR_MEMBERSHIP" />
+      <xs:element minOccurs="0" name="HR_MEMBERSHIP_TYPE" nillable="true" type="tns:HR_MEMBERSHIP_TYPE" />
+      <xs:element minOccurs="0" name="MEMBSHIP_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MEMBTYPE_CODE" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_EMP_MEMBER_DETAIL" nillable="true" type="tns:HR_EMP_MEMBER_DETAIL" />
+  <xs:complexType name="HR_MEMBERSHIP">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HR_EMP_MEMBER_DETAIL" nillable="true" type="tns:ArrayOfHR_EMP_MEMBER_DETAIL" />
+      <xs:element minOccurs="0" name="HR_MEMBERSHIP_TYPE" nillable="true" type="tns:HR_MEMBERSHIP_TYPE" />
+      <xs:element minOccurs="0" name="MEMBSHIP_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MEMBSHIP_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MEMBTYPE_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="STATUS_FLAG" nillable="true" type="xs:short" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_MEMBERSHIP" nillable="true" type="tns:HR_MEMBERSHIP" />
+  <xs:complexType name="HR_MEMBERSHIP_TYPE">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HR_EMP_MEMBER_DETAIL" nillable="true" type="tns:ArrayOfHR_EMP_MEMBER_DETAIL" />
+      <xs:element minOccurs="0" name="HR_MEMBERSHIP" nillable="true" type="tns:ArrayOfHR_MEMBERSHIP" />
+      <xs:element minOccurs="0" name="MEMBTYPE_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MEMBTYPE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="STATUS_FLAG" nillable="true" type="xs:short" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_MEMBERSHIP_TYPE" nillable="true" type="tns:HR_MEMBERSHIP_TYPE" />
+  <xs:complexType name="ArrayOfHR_MEMBERSHIP">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_MEMBERSHIP" nillable="true" type="tns:HR_MEMBERSHIP" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_MEMBERSHIP" nillable="true" type="tns:ArrayOfHR_MEMBERSHIP" />
+  <xs:complexType name="ArrayOfHR_EMP_NONCASH_BENEFIT">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_EMP_NONCASH_BENEFIT" nillable="true" type="tns:HR_EMP_NONCASH_BENEFIT" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_EMP_NONCASH_BENEFIT" nillable="true" type="tns:ArrayOfHR_EMP_NONCASH_BENEFIT" />
+  <xs:complexType name="HR_EMP_NONCASH_BENEFIT">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EMP_NUMBER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ENBEN_ASSES_MGMT_FLG" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="ENBEN_COMMENTS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ENBEN_ISSUE_DATE" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ENBEN_QUANTITY" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE" nillable="true" type="tns:HR_EMPLOYEE" />
+      <xs:element minOccurs="0" name="HR_NONCASH_BENEFIT" nillable="true" type="tns:HR_NONCASH_BENEFIT" />
+      <xs:element minOccurs="0" name="NBEN_CODE" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_EMP_NONCASH_BENEFIT" nillable="true" type="tns:HR_EMP_NONCASH_BENEFIT" />
+  <xs:complexType name="HR_NONCASH_BENEFIT">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HR_EMP_NONCASH_BENEFIT" nillable="true" type="tns:ArrayOfHR_EMP_NONCASH_BENEFIT" />
+      <xs:element minOccurs="0" name="NBEN_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NBEN_ITEM_RETURNABLE_FLG" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="NBEN_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="STATUS_FLAG" nillable="true" type="xs:short" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_NONCASH_BENEFIT" nillable="true" type="tns:HR_NONCASH_BENEFIT" />
+  <xs:complexType name="ArrayOfHR_EMP_PASSPORT">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_EMP_PASSPORT" nillable="true" type="tns:HR_EMP_PASSPORT" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_EMP_PASSPORT" nillable="true" type="tns:ArrayOfHR_EMP_PASSPORT" />
+  <xs:complexType name="HR_EMP_PASSPORT">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="COU_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMP_NUMBER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EP_COMMENTS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EP_NO_OF_ENTRIES" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="EP_PASSPORTEXPIREDATE" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EP_PASSPORTISSUEDDATE" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EP_PASSPORTNUMBER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EP_PLACEPASSPORTISSUED" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EP_SEQNO" type="xs:decimal" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE" nillable="true" type="tns:HR_EMPLOYEE" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_EMP_PASSPORT" nillable="true" type="tns:HR_EMP_PASSPORT" />
+  <xs:complexType name="ArrayOfHR_EMP_QUALIFICATION">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_EMP_QUALIFICATION" nillable="true" type="tns:HR_EMP_QUALIFICATION" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_EMP_QUALIFICATION" nillable="true" type="tns:ArrayOfHR_EMP_QUALIFICATION" />
+  <xs:complexType name="HR_EMP_QUALIFICATION">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EMP_NUMBER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EQUALIFI_COMMENTS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EQUALIFI_INSTITUTE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EQUALIFI_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EQUALIFI_YEAR" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE" nillable="true" type="tns:HR_EMPLOYEE" />
+      <xs:element minOccurs="0" name="QUALIFI_CODE" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_EMP_QUALIFICATION" nillable="true" type="tns:HR_EMP_QUALIFICATION" />
+  <xs:complexType name="ArrayOfHR_EMP_RELATIONINFO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_EMP_RELATIONINFO" nillable="true" type="tns:HR_EMP_RELATIONINFO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_EMP_RELATIONINFO" nillable="true" type="tns:ArrayOfHR_EMP_RELATIONINFO" />
+  <xs:complexType name="HR_EMP_RELATIONINFO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EMP_NUMBER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EREL_BIRTHDAY" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EREL_DEPENDNO" type="xs:decimal" />
+      <xs:element minOccurs="0" name="EREL_EDU_CENTRE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EREL_EMP_NUMBER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EREL_ENTDEATHDONATION_FLG" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="EREL_ENTMEDICALBENIFIT_FLG" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="EREL_HOUSE_ADDRESS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EREL_LIVINGORNOT_FLG" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="EREL_NIC_NUMBER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EREL_OFFICE_ADDRESS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EREL_PF_NOMINEE_FLG" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="EREL_PF_RATIO" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="EREL_RELATIONFULLNAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EREL_RELATIONSHIP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EREL_SEX_FLG" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="EREL_SPOUSE_TELEPHONE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EREL_TELEPHONE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EREL_WORK_SAME_COMP_FLG" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE" nillable="true" type="tns:HR_EMPLOYEE" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE1" nillable="true" type="tns:HR_EMPLOYEE" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_EMP_RELATIONINFO" nillable="true" type="tns:HR_EMP_RELATIONINFO" />
+  <xs:complexType name="ArrayOfHR_EMP_TRAININGS">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_EMP_TRAININGS" nillable="true" type="tns:HR_EMP_TRAININGS" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_EMP_TRAININGS" nillable="true" type="tns:ArrayOfHR_EMP_TRAININGS" />
+  <xs:complexType name="HR_EMP_TRANSPORT">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EMP_NUMBER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ETPORT_COD_EMP_NUMBER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ETPORT_COMMUTING_MODE" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="ETPORT_DISTANCE" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="ETPORT_DURATION" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="ETPORT_MODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ETPORT_NEAR_STATION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE" nillable="true" type="tns:HR_EMPLOYEE" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_EMP_TRANSPORT" nillable="true" type="tns:HR_EMP_TRANSPORT" />
+  <xs:complexType name="ArrayOfHR_EMP_WARNINGS">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_EMP_WARNINGS" nillable="true" type="tns:HR_EMP_WARNINGS" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_EMP_WARNINGS" nillable="true" type="tns:ArrayOfHR_EMP_WARNINGS" />
+  <xs:complexType name="HR_EMP_WARNINGS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EMP_NUMBER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE" nillable="true" type="tns:HR_EMPLOYEE" />
+      <xs:element minOccurs="0" name="WRN_CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WRN_DATE" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="WRN_DESC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WRN_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="WRN_TYPE" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_EMP_WARNINGS" nillable="true" type="tns:HR_EMP_WARNINGS" />
+  <xs:complexType name="HR_EMP_WORK_EXPERIENCE">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EEXP_ACCOUNTABILITIES" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EEXP_ACHIEVEMENTS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EEXP_ADDRESS1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EEXP_ADDRESS2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EEXP_ADDRESS3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EEXP_COMPANY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EEXP_CONTACT_PERSON" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EEXP_DESIG_ON_LEAVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EEXP_EMAIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EEXP_FROM_DATE" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EEXP_MONTHS" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="EEXP_REASON_FOR_LEAVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EEXP_TELEPHONE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EEXP_TO_DATE" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EEXP_WORK_RELATED_FLG" nillable="true" type="xs:short" />
+      <xs:element minOccurs="0" name="EEXP_YEARS" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="EMP_NUMBER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HR_EMPLOYEE" nillable="true" type="tns:HR_EMPLOYEE" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="HR_EMP_WORK_EXPERIENCE" nillable="true" type="tns:HR_EMP_WORK_EXPERIENCE" />
+  <xs:complexType name="ArrayOfHR_EMP_WORK_EXPERIENCE">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_EMP_WORK_EXPERIENCE" nillable="true" type="tns:HR_EMP_WORK_EXPERIENCE" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_EMP_WORK_EXPERIENCE" nillable="true" type="tns:ArrayOfHR_EMP_WORK_EXPERIENCE" />
+  <xs:complexType name="ArrayOfHR_CASH_BENEFIT">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_CASH_BENEFIT" nillable="true" type="tns:HR_CASH_BENEFIT" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_CASH_BENEFIT" nillable="true" type="tns:ArrayOfHR_CASH_BENEFIT" />
+  <xs:complexType name="ArrayOfHR_NONCASH_BENEFIT">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_NONCASH_BENEFIT" nillable="true" type="tns:HR_NONCASH_BENEFIT" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_NONCASH_BENEFIT" nillable="true" type="tns:ArrayOfHR_NONCASH_BENEFIT" />
+  <xs:complexType name="ArrayOfFIN_CustomerSupplier_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FIN_CustomerSupplier_Info" nillable="true" type="tns:FIN_CustomerSupplier_Info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFIN_CustomerSupplier_Info" nillable="true" type="tns:ArrayOfFIN_CustomerSupplier_Info" />
+  <xs:complexType name="FIN_CustomerSupplier_Info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AddressLine1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AddressLine2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ContactPersonsAccount" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ContactPersonsSales" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreditLimit" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CreditPeriod" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="CreditPeriodUnit" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CusSupCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustSupFlag" type="xs:int" />
+      <xs:element minOccurs="0" name="CustSupName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustSupStatus" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="CustSupType" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FIN_Currency" nillable="true" type="tns:FIN_Currency" />
+      <xs:element minOccurs="0" name="FIN_CustSupPeriodBalance" nillable="true" type="tns:ArrayOfFIN_CustSupPeriodBalance" />
+      <xs:element minOccurs="0" name="FIN_CustomerSupplierBank" nillable="true" type="tns:ArrayOfFIN_CustomerSupplierBank" />
+      <xs:element minOccurs="0" name="FaxNo1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FaxNo2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ForeignLocalFlag" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="PaymentMode" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="TaxFlag" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="TaxRegNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TelephoneNo1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TelephoneNo2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WebSite" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="FIN_CustomerSupplier_Info" nillable="true" type="tns:FIN_CustomerSupplier_Info" />
+  <xs:complexType name="FIN_Currency">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CurrencyName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ERP_AgentBrokerSalesMan" nillable="true" type="tns:ArrayOfERP_AgentBrokerSalesMan" />
+      <xs:element minOccurs="0" name="ERP_FixedTxnAttributes" nillable="true" type="tns:ArrayOfERP_FixedTxnAttributes" />
+      <xs:element minOccurs="0" name="ERP_FixedTxnAttributes1" nillable="true" type="tns:ArrayOfERP_FixedTxnAttributes" />
+      <xs:element minOccurs="0" name="ERP_FixedTxnAttributes2" nillable="true" type="tns:ArrayOfERP_FixedTxnAttributes" />
+      <xs:element minOccurs="0" name="ERP_FixedTxnAttributes3" nillable="true" type="tns:ArrayOfERP_FixedTxnAttributes" />
+      <xs:element minOccurs="0" name="FIN_BankAccount" nillable="true" type="tns:ArrayOfFIN_BankAccount" />
+      <xs:element minOccurs="0" name="FIN_ControledTransaction" nillable="true" type="tns:ArrayOfFIN_ControledTransaction" />
+      <xs:element minOccurs="0" name="FIN_CostCenterwiseConfiguration" nillable="true" type="tns:ArrayOfFIN_CostCenterwiseConfiguration" />
+      <xs:element minOccurs="0" name="FIN_CostCenterwiseConfiguration1" nillable="true" type="tns:ArrayOfFIN_CostCenterwiseConfiguration" />
+      <xs:element minOccurs="0" name="FIN_CostCenterwiseConfiguration2" nillable="true" type="tns:ArrayOfFIN_CostCenterwiseConfiguration" />
+      <xs:element minOccurs="0" name="FIN_CostCenterwiseConfiguration3" nillable="true" type="tns:ArrayOfFIN_CostCenterwiseConfiguration" />
+      <xs:element minOccurs="0" name="FIN_CostCenterwiseConfiguration4" nillable="true" type="tns:ArrayOfFIN_CostCenterwiseConfiguration" />
+      <xs:element minOccurs="0" name="FIN_CostCenterwiseConfiguration5" nillable="true" type="tns:ArrayOfFIN_CostCenterwiseConfiguration" />
+      <xs:element minOccurs="0" name="FIN_CurrencyExchangeRate" nillable="true" type="tns:ArrayOfFIN_CurrencyExchangeRate" />
+      <xs:element minOccurs="0" name="FIN_CustSupPeriodBalance" nillable="true" type="tns:ArrayOfFIN_CustSupPeriodBalance" />
+      <xs:element minOccurs="0" name="FIN_CustomerSupplier_Info" nillable="true" type="tns:ArrayOfFIN_CustomerSupplier_Info" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="FIN_Currency" nillable="true" type="tns:FIN_Currency" />
+  <xs:complexType name="ArrayOfERP_AgentBrokerSalesMan">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ERP_AgentBrokerSalesMan" nillable="true" type="tns:ERP_AgentBrokerSalesMan" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfERP_AgentBrokerSalesMan" nillable="true" type="tns:ArrayOfERP_AgentBrokerSalesMan" />
+  <xs:complexType name="ERP_AgentBrokerSalesMan">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActiveStatus" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="AddressLine1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AddressLine2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AgentBrokerSalesManCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AgentBrokerSalesManFlag" type="xs:int" />
+      <xs:element minOccurs="0" name="AgentBrokerSalesManName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FIN_Currency" nillable="true" type="tns:FIN_Currency" />
+      <xs:element minOccurs="0" name="FIN_GeneralLedgerAccount" nillable="true" type="tns:FIN_GeneralLedgerAccount" />
+      <xs:element minOccurs="0" name="FaxNo1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FaxNo2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ForeignLocalFlag" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="GLAccount" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PaymentMode" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="TaxFlag" type="xs:int" />
+      <xs:element minOccurs="0" name="TelephoneNo1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TelephoneNo2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WebSite" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="ERP_AgentBrokerSalesMan" nillable="true" type="tns:ERP_AgentBrokerSalesMan" />
+  <xs:complexType name="FIN_GeneralLedgerAccount">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AccountNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AccountSubtype" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="AccountSubtypeCat" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="AccountType" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ERP_AgentBrokerSalesMan" nillable="true" type="tns:ArrayOfERP_AgentBrokerSalesMan" />
+      <xs:element minOccurs="0" name="ERP_FixedTxnAttributes" nillable="true" type="tns:ArrayOfERP_FixedTxnAttributes" />
+      <xs:element minOccurs="0" name="ERP_FixedTxnAttributes1" nillable="true" type="tns:ArrayOfERP_FixedTxnAttributes" />
+      <xs:element minOccurs="0" name="ERP_FixedTxnAttributes2" nillable="true" type="tns:ArrayOfERP_FixedTxnAttributes" />
+      <xs:element minOccurs="0" name="ERP_FixedTxnAttributes3" nillable="true" type="tns:ArrayOfERP_FixedTxnAttributes" />
+      <xs:element minOccurs="0" name="ERP_FixedTxnAttributes4" nillable="true" type="tns:ArrayOfERP_FixedTxnAttributes" />
+      <xs:element minOccurs="0" name="FIN_AccountSubTypeCategory" nillable="true" type="tns:FIN_AccountSubTypeCategory" />
+      <xs:element minOccurs="0" name="FIN_BankAccount" nillable="true" type="tns:ArrayOfFIN_BankAccount" />
+      <xs:element minOccurs="0" name="FIN_ControledTransaction" nillable="true" type="tns:ArrayOfFIN_ControledTransaction" />
+      <xs:element minOccurs="0" name="FIN_CostCenterwiseConfiguration" nillable="true" type="tns:ArrayOfFIN_CostCenterwiseConfiguration" />
+      <xs:element minOccurs="0" name="FIN_CostCenterwiseConfiguration1" nillable="true" type="tns:ArrayOfFIN_CostCenterwiseConfiguration" />
+      <xs:element minOccurs="0" name="FIN_CostCenterwiseConfiguration2" nillable="true" type="tns:ArrayOfFIN_CostCenterwiseConfiguration" />
+      <xs:element minOccurs="0" name="FIN_CostCenterwiseConfiguration3" nillable="true" type="tns:ArrayOfFIN_CostCenterwiseConfiguration" />
+      <xs:element minOccurs="0" name="FIN_CostCenterwiseConfiguration4" nillable="true" type="tns:ArrayOfFIN_CostCenterwiseConfiguration" />
+      <xs:element minOccurs="0" name="FIN_ProfitLostType" nillable="true" type="tns:FIN_ProfitLostType" />
+      <xs:element minOccurs="0" name="FIN_SpecialAccountType" nillable="true" type="tns:FIN_SpecialAccountType" />
+      <xs:element minOccurs="0" name="IsBankRelatedFlag" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="PostableFlag" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ProfitLossType" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="RevalueStatusFlag" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ShortName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SpecialAccountType" nillable="true" type="xs:int" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="FIN_GeneralLedgerAccount" nillable="true" type="tns:FIN_GeneralLedgerAccount" />
+  <xs:complexType name="ArrayOfERP_FixedTxnAttributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ERP_FixedTxnAttributes" nillable="true" type="tns:ERP_FixedTxnAttributes" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfERP_FixedTxnAttributes" nillable="true" type="tns:ArrayOfERP_FixedTxnAttributes" />
+  <xs:complexType name="ERP_FixedTxnAttributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cost_Crd_CostCenterCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cost_Crd_CurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cost_Crd_GLAccCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cost_Dbt_CostCenterCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cost_Dbt_CurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cost_Dbt_GLAccCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DocCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ERP_DocumentAttributes" nillable="true" type="tns:ERP_DocumentAttributes" />
+      <xs:element minOccurs="0" name="FIN_CostCenter" nillable="true" type="tns:FIN_CostCenter" />
+      <xs:element minOccurs="0" name="FIN_CostCenter1" nillable="true" type="tns:FIN_CostCenter" />
+      <xs:element minOccurs="0" name="FIN_CostCenter2" nillable="true" type="tns:FIN_CostCenter" />
+      <xs:element minOccurs="0" name="FIN_CostCenter3" nillable="true" type="tns:FIN_CostCenter" />
+      <xs:element minOccurs="0" name="FIN_Currency" nillable="true" type="tns:FIN_Currency" />
+      <xs:element minOccurs="0" name="FIN_Currency1" nillable="true" type="tns:FIN_Currency" />
+      <xs:element minOccurs="0" name="FIN_Currency2" nillable="true" type="tns:FIN_Currency" />
+      <xs:element minOccurs="0" name="FIN_Currency3" nillable="true" type="tns:FIN_Currency" />
+      <xs:element minOccurs="0" name="FIN_GeneralLedgerAccount" nillable="true" type="tns:FIN_GeneralLedgerAccount" />
+      <xs:element minOccurs="0" name="FIN_GeneralLedgerAccount1" nillable="true" type="tns:FIN_GeneralLedgerAccount" />
+      <xs:element minOccurs="0" name="FIN_GeneralLedgerAccount2" nillable="true" type="tns:FIN_GeneralLedgerAccount" />
+      <xs:element minOccurs="0" name="FIN_GeneralLedgerAccount3" nillable="true" type="tns:FIN_GeneralLedgerAccount" />
+      <xs:element minOccurs="0" name="FIN_GeneralLedgerAccount4" nillable="true" type="tns:FIN_GeneralLedgerAccount" />
+      <xs:element minOccurs="0" name="GLCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sales_Crd_CostCenterCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sales_Crd_CurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sales_Crd_GLAccCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sales_Dbt_CostCenterCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sales_Dbt_CurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sales_Dbt_GLAccCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TxCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="ERP_FixedTxnAttributes" nillable="true" type="tns:ERP_FixedTxnAttributes" />
+  <xs:complexType name="ERP_DocumentAttributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AmountTally_Flag" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="AuthorizeRequired_Flag" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="CR_ToGL_Flag" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ChequePrint_Flag" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="DB_ToGL_Flag" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="DocCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ERP_Document" nillable="true" type="tns:ERP_Document" />
+      <xs:element minOccurs="0" name="ERP_DocumentAttributesBankInfo" nillable="true" type="tns:ERP_DocumentAttributesBankInfo" />
+      <xs:element minOccurs="0" name="ERP_DocumentAttributesRef" nillable="true" type="tns:ArrayOfERP_DocumentAttributesRef" />
+      <xs:element minOccurs="0" name="ERP_FixedTxnAttributes" nillable="true" type="tns:ArrayOfERP_FixedTxnAttributes" />
+      <xs:element minOccurs="0" name="ERP_LastTransactionInfo" nillable="true" type="tns:ArrayOfERP_LastTransactionInfo" />
+      <xs:element minOccurs="0" name="FIN_ControledTransaction" nillable="true" type="tns:ArrayOfFIN_ControledTransaction" />
+      <xs:element minOccurs="0" name="FIN_CostCenterwiseConfiguration" nillable="true" type="tns:ArrayOfFIN_CostCenterwiseConfiguration" />
+      <xs:element minOccurs="0" name="FIN_CostCenterwiseConfiguration1" nillable="true" type="tns:ArrayOfFIN_CostCenterwiseConfiguration" />
+      <xs:element minOccurs="0" name="FIN_CostCenterwiseConfiguration2" nillable="true" type="tns:ArrayOfFIN_CostCenterwiseConfiguration" />
+      <xs:element minOccurs="0" name="FIN_TxnReference" nillable="true" type="tns:ArrayOfFIN_TxnReference" />
+      <xs:element minOccurs="0" name="FixedBankAcc_Flag" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="FixedCustSupCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FixedToCustSup_Flag" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="LongName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShortName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TxCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="ERP_DocumentAttributes" nillable="true" type="tns:ERP_DocumentAttributes" />
+  <xs:complexType name="ERP_Document">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CashBankFlag" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ChequeSeqFlag" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="DocCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DocName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DocType" type="xs:int" />
+      <xs:element minOccurs="0" name="DocumentMode" type="xs:int" />
+      <xs:element minOccurs="0" name="ERP_DocumentAttributes" nillable="true" type="tns:ArrayOfERP_DocumentAttributes" />
+      <xs:element minOccurs="0" name="FIN_BankAccount" nillable="true" type="tns:ArrayOfFIN_BankAccount" />
+      <xs:element minOccurs="0" name="ProductCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubSystemCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TransactionMode" type="xs:int" />
+      <xs:element minOccurs="0" name="TransferFlag" nillable="true" type="xs:int" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="ERP_Document" nillable="true" type="tns:ERP_Document" />
+  <xs:complexType name="ArrayOfERP_DocumentAttributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ERP_DocumentAttributes" nillable="true" type="tns:ERP_DocumentAttributes" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfERP_DocumentAttributes" nillable="true" type="tns:ArrayOfERP_DocumentAttributes" />
+  <xs:complexType name="ArrayOfFIN_BankAccount">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FIN_BankAccount" nillable="true" type="tns:FIN_BankAccount" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFIN_BankAccount" nillable="true" type="tns:ArrayOfFIN_BankAccount" />
+  <xs:complexType name="FIN_BankAccount">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountSEQNo" type="xs:int" />
+      <xs:element minOccurs="0" name="Balance" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="BankBranchCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BankCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ChequeDOCCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ChequePrintFlag" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CostCenter" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CurrentACNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ERP_Document" nillable="true" type="tns:ERP_Document" />
+      <xs:element minOccurs="0" name="ERP_DocumentAttributesBankInfo" nillable="true" type="tns:ArrayOfERP_DocumentAttributesBankInfo" />
+      <xs:element minOccurs="0" name="FIN_BankBranch" nillable="true" type="tns:FIN_BankBranch" />
+      <xs:element minOccurs="0" name="FIN_CostCenter" nillable="true" type="tns:FIN_CostCenter" />
+      <xs:element minOccurs="0" name="FIN_Currency" nillable="true" type="tns:FIN_Currency" />
+      <xs:element minOccurs="0" name="FIN_GeneralLedgerAccount" nillable="true" type="tns:FIN_GeneralLedgerAccount" />
+      <xs:element minOccurs="0" name="GLAccountNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastChequeNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastChequePrintedDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="NoofDepositperSlip" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ODLimit" nillable="true" type="xs:decimal" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="FIN_BankAccount" nillable="true" type="tns:FIN_BankAccount" />
+  <xs:complexType name="ArrayOfERP_DocumentAttributesBankInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ERP_DocumentAttributesBankInfo" nillable="true" type="tns:ERP_DocumentAttributesBankInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfERP_DocumentAttributesBankInfo" nillable="true" type="tns:ArrayOfERP_DocumentAttributesBankInfo" />
+  <xs:complexType name="ERP_DocumentAttributesBankInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DocCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ERP_DocumentAttributes" nillable="true" type="tns:ERP_DocumentAttributes" />
+      <xs:element minOccurs="0" name="FIN_BankAccount" nillable="true" type="tns:FIN_BankAccount" />
+      <xs:element minOccurs="0" name="FixedAccSeqNo" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="FixedBankCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FixedBranchCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TxCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="ERP_DocumentAttributesBankInfo" nillable="true" type="tns:ERP_DocumentAttributesBankInfo" />
+  <xs:complexType name="FIN_BankBranch">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Address2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AreaCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BankBranchCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BankCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BranchName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FIN_Area" nillable="true" type="tns:FIN_Area" />
+      <xs:element minOccurs="0" name="FIN_Bank" nillable="true" type="tns:FIN_Bank" />
+      <xs:element minOccurs="0" name="FIN_BankAccount" nillable="true" type="tns:ArrayOfFIN_BankAccount" />
+      <xs:element minOccurs="0" name="FIN_CustomerSupplierBank" nillable="true" type="tns:ArrayOfFIN_CustomerSupplierBank" />
+      <xs:element minOccurs="0" name="RegionCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="FIN_BankBranch" nillable="true" type="tns:FIN_BankBranch" />
+  <xs:complexType name="FIN_Area">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AreaCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AreaName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FIN_BankBranch" nillable="true" type="tns:ArrayOfFIN_BankBranch" />
+      <xs:element minOccurs="0" name="FIN_Region" nillable="true" type="tns:FIN_Region" />
+      <xs:element minOccurs="0" name="RegionCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="FIN_Area" nillable="true" type="tns:FIN_Area" />
+  <xs:complexType name="ArrayOfFIN_BankBranch">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FIN_BankBranch" nillable="true" type="tns:FIN_BankBranch" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFIN_BankBranch" nillable="true" type="tns:ArrayOfFIN_BankBranch" />
+  <xs:complexType name="FIN_Region">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FIN_Area" nillable="true" type="tns:ArrayOfFIN_Area" />
+      <xs:element minOccurs="0" name="RegionCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RegionName" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="FIN_Region" nillable="true" type="tns:FIN_Region" />
+  <xs:complexType name="ArrayOfFIN_Area">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FIN_Area" nillable="true" type="tns:FIN_Area" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFIN_Area" nillable="true" type="tns:ArrayOfFIN_Area" />
+  <xs:complexType name="FIN_Bank">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BankCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BankName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FIN_BankBranch" nillable="true" type="tns:ArrayOfFIN_BankBranch" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="FIN_Bank" nillable="true" type="tns:FIN_Bank" />
+  <xs:complexType name="ArrayOfFIN_CustomerSupplierBank">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FIN_CustomerSupplierBank" nillable="true" type="tns:FIN_CustomerSupplierBank" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFIN_CustomerSupplierBank" nillable="true" type="tns:ArrayOfFIN_CustomerSupplierBank" />
+  <xs:complexType name="FIN_CustomerSupplierBank">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BankCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BranchCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CusSupCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustSupFlag" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="FIN_BankBranch" nillable="true" type="tns:FIN_BankBranch" />
+      <xs:element minOccurs="0" name="FIN_CustomerSupplier_Info" nillable="true" type="tns:FIN_CustomerSupplier_Info" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="FIN_CustomerSupplierBank" nillable="true" type="tns:FIN_CustomerSupplierBank" />
+  <xs:complexType name="FIN_CostCenter">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CostCenterCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CostCenterDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ERP_FixedTxnAttributes" nillable="true" type="tns:ArrayOfERP_FixedTxnAttributes" />
+      <xs:element minOccurs="0" name="ERP_FixedTxnAttributes1" nillable="true" type="tns:ArrayOfERP_FixedTxnAttributes" />
+      <xs:element minOccurs="0" name="ERP_FixedTxnAttributes2" nillable="true" type="tns:ArrayOfERP_FixedTxnAttributes" />
+      <xs:element minOccurs="0" name="ERP_FixedTxnAttributes3" nillable="true" type="tns:ArrayOfERP_FixedTxnAttributes" />
+      <xs:element minOccurs="0" name="FIN_BankAccount" nillable="true" type="tns:ArrayOfFIN_BankAccount" />
+      <xs:element minOccurs="0" name="FIN_ControledTransaction" nillable="true" type="tns:ArrayOfFIN_ControledTransaction" />
+      <xs:element minOccurs="0" name="FIN_CostCenterwiseConfiguration" nillable="true" type="tns:ArrayOfFIN_CostCenterwiseConfiguration" />
+      <xs:element minOccurs="0" name="FIN_CostCenterwiseConfiguration1" nillable="true" type="tns:ArrayOfFIN_CostCenterwiseConfiguration" />
+      <xs:element minOccurs="0" name="FIN_CostCenterwiseConfiguration2" nillable="true" type="tns:ArrayOfFIN_CostCenterwiseConfiguration" />
+      <xs:element minOccurs="0" name="FIN_CostCenterwiseConfiguration3" nillable="true" type="tns:ArrayOfFIN_CostCenterwiseConfiguration" />
+      <xs:element minOccurs="0" name="FIN_CostCenterwiseConfiguration4" nillable="true" type="tns:ArrayOfFIN_CostCenterwiseConfiguration" />
+      <xs:element minOccurs="0" name="FIN_CostCenterwiseConfiguration5" nillable="true" type="tns:ArrayOfFIN_CostCenterwiseConfiguration" />
+      <xs:element minOccurs="0" name="FIN_CostCenterwiseConfiguration6" nillable="true" type="tns:ArrayOfFIN_CostCenterwiseConfiguration" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="FIN_CostCenter" nillable="true" type="tns:FIN_CostCenter" />
+  <xs:complexType name="ArrayOfFIN_ControledTransaction">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FIN_ControledTransaction" nillable="true" type="tns:FIN_ControledTransaction" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFIN_ControledTransaction" nillable="true" type="tns:ArrayOfFIN_ControledTransaction" />
+  <xs:complexType name="FIN_ControledTransaction">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CostCenterCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreditDebit_Flag" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DocCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ERP_DocumentAttributes" nillable="true" type="tns:ERP_DocumentAttributes" />
+      <xs:element minOccurs="0" name="FIN_CostCenter" nillable="true" type="tns:FIN_CostCenter" />
+      <xs:element minOccurs="0" name="FIN_Currency" nillable="true" type="tns:FIN_Currency" />
+      <xs:element minOccurs="0" name="FIN_GeneralLedgerAccount" nillable="true" type="tns:FIN_GeneralLedgerAccount" />
+      <xs:element minOccurs="0" name="GLAccountNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TxCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="FIN_ControledTransaction" nillable="true" type="tns:FIN_ControledTransaction" />
+  <xs:complexType name="ArrayOfFIN_CostCenterwiseConfiguration">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FIN_CostCenterwiseConfiguration" nillable="true" type="tns:FIN_CostCenterwiseConfiguration" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFIN_CostCenterwiseConfiguration" nillable="true" type="tns:ArrayOfFIN_CostCenterwiseConfiguration" />
+  <xs:complexType name="FIN_CostCenterwiseConfiguration">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="APCostCenterCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AdjustmentAccNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AdjustmentCostCenter" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AdjustmentCurrCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BaseCostCenterForRetainedProfit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BaseCurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BaseCurrencyCodeForRetainedProfit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BaseGLAccountForRetainedProfit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CostCenterCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CrdAccountCodeRetainedProfit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CrdCostCenterRetainedProfit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CrdCurrencyCodeForRetainedProfit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DateDisplayFormat" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DbtAccountCodeRetainedProfit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DbtCostCenterRetainedProfit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DbtCurrencyCodeForRetainedProfit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DocCodeForInvoice" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DocCodeForRetainedProfit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DocCodeForRevalGainLoss" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ERP_DocumentAttributes" nillable="true" type="tns:ERP_DocumentAttributes" />
+      <xs:element minOccurs="0" name="ERP_DocumentAttributes1" nillable="true" type="tns:ERP_DocumentAttributes" />
+      <xs:element minOccurs="0" name="ERP_DocumentAttributes2" nillable="true" type="tns:ERP_DocumentAttributes" />
+      <xs:element minOccurs="0" name="FIN_CostCenter" nillable="true" type="tns:FIN_CostCenter" />
+      <xs:element minOccurs="0" name="FIN_CostCenter1" nillable="true" type="tns:FIN_CostCenter" />
+      <xs:element minOccurs="0" name="FIN_CostCenter2" nillable="true" type="tns:FIN_CostCenter" />
+      <xs:element minOccurs="0" name="FIN_CostCenter3" nillable="true" type="tns:FIN_CostCenter" />
+      <xs:element minOccurs="0" name="FIN_CostCenter4" nillable="true" type="tns:FIN_CostCenter" />
+      <xs:element minOccurs="0" name="FIN_CostCenter5" nillable="true" type="tns:FIN_CostCenter" />
+      <xs:element minOccurs="0" name="FIN_CostCenter6" nillable="true" type="tns:FIN_CostCenter" />
+      <xs:element minOccurs="0" name="FIN_Currency" nillable="true" type="tns:FIN_Currency" />
+      <xs:element minOccurs="0" name="FIN_Currency1" nillable="true" type="tns:FIN_Currency" />
+      <xs:element minOccurs="0" name="FIN_Currency2" nillable="true" type="tns:FIN_Currency" />
+      <xs:element minOccurs="0" name="FIN_Currency3" nillable="true" type="tns:FIN_Currency" />
+      <xs:element minOccurs="0" name="FIN_Currency4" nillable="true" type="tns:FIN_Currency" />
+      <xs:element minOccurs="0" name="FIN_Currency5" nillable="true" type="tns:FIN_Currency" />
+      <xs:element minOccurs="0" name="FIN_GeneralLedgerAccount" nillable="true" type="tns:FIN_GeneralLedgerAccount" />
+      <xs:element minOccurs="0" name="FIN_GeneralLedgerAccount1" nillable="true" type="tns:FIN_GeneralLedgerAccount" />
+      <xs:element minOccurs="0" name="FIN_GeneralLedgerAccount2" nillable="true" type="tns:FIN_GeneralLedgerAccount" />
+      <xs:element minOccurs="0" name="FIN_GeneralLedgerAccount3" nillable="true" type="tns:FIN_GeneralLedgerAccount" />
+      <xs:element minOccurs="0" name="FIN_GeneralLedgerAccount4" nillable="true" type="tns:FIN_GeneralLedgerAccount" />
+      <xs:element minOccurs="0" name="PNLAccountCodeForRetainedProfit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PNLCostCenterForRetainedProfit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PNLCurrencyCodeForRetainedProfit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RevNo" type="xs:int" />
+      <xs:element minOccurs="0" name="TxnCodeForInvoice" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TxnCodeForRetainedProfit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TxnCodeForRevalGainLoss" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="FIN_CostCenterwiseConfiguration" nillable="true" type="tns:FIN_CostCenterwiseConfiguration" />
+  <xs:complexType name="ArrayOfERP_DocumentAttributesRef">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ERP_DocumentAttributesRef" nillable="true" type="tns:ERP_DocumentAttributesRef" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfERP_DocumentAttributesRef" nillable="true" type="tns:ArrayOfERP_DocumentAttributesRef" />
+  <xs:complexType name="ERP_DocumentAttributesRef">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DocCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ERP_DocumentAttributes" nillable="true" type="tns:ERP_DocumentAttributes" />
+      <xs:element minOccurs="0" name="RefNo" type="xs:short" />
+      <xs:element minOccurs="0" name="RefValidationCriteria" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="RefValidationMethod" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="TxCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="ERP_DocumentAttributesRef" nillable="true" type="tns:ERP_DocumentAttributesRef" />
+  <xs:complexType name="ArrayOfERP_LastTransactionInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ERP_LastTransactionInfo" nillable="true" type="tns:ERP_LastTransactionInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfERP_LastTransactionInfo" nillable="true" type="tns:ArrayOfERP_LastTransactionInfo" />
+  <xs:complexType name="ERP_LastTransactionInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DocCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ERP_DocumentAttributes" nillable="true" type="tns:ERP_DocumentAttributes" />
+      <xs:element minOccurs="0" name="LastTxnSerialNo" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="LastVoucherNo" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ProductCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubSystemCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TransactionType" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="TxCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="ERP_LastTransactionInfo" nillable="true" type="tns:ERP_LastTransactionInfo" />
+  <xs:complexType name="ArrayOfFIN_TxnReference">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FIN_TxnReference" nillable="true" type="tns:FIN_TxnReference" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFIN_TxnReference" nillable="true" type="tns:ArrayOfFIN_TxnReference" />
+  <xs:complexType name="FIN_TxnReference">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DocCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ERP_DocumentAttributes" nillable="true" type="tns:ERP_DocumentAttributes" />
+      <xs:element minOccurs="0" name="RefSeq" type="xs:short" />
+      <xs:element minOccurs="0" name="ReferenceText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SeqNo" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="TxCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="FIN_TxnReference" nillable="true" type="tns:FIN_TxnReference" />
+  <xs:complexType name="FIN_AccountSubTypeCategory">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountSubCatType" type="xs:int" />
+      <xs:element minOccurs="0" name="AccountSubType" type="xs:int" />
+      <xs:element minOccurs="0" name="AccountType" type="xs:int" />
+      <xs:element minOccurs="0" name="FIN_AccountSubType" nillable="true" type="tns:FIN_AccountSubType" />
+      <xs:element minOccurs="0" name="FIN_GeneralLedgerAccount" nillable="true" type="tns:ArrayOfFIN_GeneralLedgerAccount" />
+      <xs:element minOccurs="0" name="SubTypeDescription" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="FIN_AccountSubTypeCategory" nillable="true" type="tns:FIN_AccountSubTypeCategory" />
+  <xs:complexType name="FIN_AccountSubType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountSubType" type="xs:int" />
+      <xs:element minOccurs="0" name="AccountType" type="xs:int" />
+      <xs:element minOccurs="0" name="FIN_AccountSubTypeCategory" nillable="true" type="tns:ArrayOfFIN_AccountSubTypeCategory" />
+      <xs:element minOccurs="0" name="FIN_AccountType" nillable="true" type="tns:FIN_AccountType" />
+      <xs:element minOccurs="0" name="SubTypeDescription" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="FIN_AccountSubType" nillable="true" type="tns:FIN_AccountSubType" />
+  <xs:complexType name="ArrayOfFIN_AccountSubTypeCategory">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FIN_AccountSubTypeCategory" nillable="true" type="tns:FIN_AccountSubTypeCategory" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFIN_AccountSubTypeCategory" nillable="true" type="tns:ArrayOfFIN_AccountSubTypeCategory" />
+  <xs:complexType name="FIN_AccountType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AccountType" type="xs:int" />
+      <xs:element minOccurs="0" name="FIN_AccountSubType" nillable="true" type="tns:ArrayOfFIN_AccountSubType" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="FIN_AccountType" nillable="true" type="tns:FIN_AccountType" />
+  <xs:complexType name="ArrayOfFIN_AccountSubType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FIN_AccountSubType" nillable="true" type="tns:FIN_AccountSubType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFIN_AccountSubType" nillable="true" type="tns:ArrayOfFIN_AccountSubType" />
+  <xs:complexType name="ArrayOfFIN_GeneralLedgerAccount">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FIN_GeneralLedgerAccount" nillable="true" type="tns:FIN_GeneralLedgerAccount" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFIN_GeneralLedgerAccount" nillable="true" type="tns:ArrayOfFIN_GeneralLedgerAccount" />
+  <xs:complexType name="FIN_ProfitLostType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FIN_GeneralLedgerAccount" nillable="true" type="tns:ArrayOfFIN_GeneralLedgerAccount" />
+      <xs:element minOccurs="0" name="ProfitLostAccountName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TypeID" type="xs:int" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="FIN_ProfitLostType" nillable="true" type="tns:FIN_ProfitLostType" />
+  <xs:complexType name="FIN_SpecialAccountType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FIN_GeneralLedgerAccount" nillable="true" type="tns:ArrayOfFIN_GeneralLedgerAccount" />
+      <xs:element minOccurs="0" name="SpecialAccountName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TypeID" type="xs:int" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="FIN_SpecialAccountType" nillable="true" type="tns:FIN_SpecialAccountType" />
+  <xs:complexType name="ArrayOfFIN_CurrencyExchangeRate">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FIN_CurrencyExchangeRate" nillable="true" type="tns:FIN_CurrencyExchangeRate" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFIN_CurrencyExchangeRate" nillable="true" type="tns:ArrayOfFIN_CurrencyExchangeRate" />
+  <xs:complexType name="FIN_CurrencyExchangeRate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BuyRate" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CalenderMonth" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="CalenderYear" type="xs:short" />
+      <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FIN_Currency" nillable="true" type="tns:FIN_Currency" />
+      <xs:element minOccurs="0" name="MiddleRate" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="StandardRate" nillable="true" type="xs:decimal" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="FIN_CurrencyExchangeRate" nillable="true" type="tns:FIN_CurrencyExchangeRate" />
+  <xs:complexType name="ArrayOfFIN_CustSupPeriodBalance">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FIN_CustSupPeriodBalance" nillable="true" type="tns:FIN_CustSupPeriodBalance" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFIN_CustSupPeriodBalance" nillable="true" type="tns:ArrayOfFIN_CustSupPeriodBalance" />
+  <xs:complexType name="FIN_CustSupPeriodBalance">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountingPeriod" type="xs:int" />
+      <xs:element minOccurs="0" name="ClosingBalanceFCY" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ClosingBalanceLCY" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CreditMovementFCY" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CreditMovementLCY" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CusSupCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustSupFlag" type="xs:int" />
+      <xs:element minOccurs="0" name="DebitMovementFCY" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DebitMovementLCY" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="FIN_Currency" nillable="true" type="tns:FIN_Currency" />
+      <xs:element minOccurs="0" name="FIN_CustomerSupplier_Info" nillable="true" type="tns:FIN_CustomerSupplier_Info" />
+      <xs:element minOccurs="0" name="FinancialYear" type="xs:int" />
+      <xs:element minOccurs="0" name="OpeningBalanceFCY" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="OpeningBalanceLCY" nillable="true" type="xs:decimal" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="FIN_CustSupPeriodBalance" nillable="true" type="tns:FIN_CustSupPeriodBalance" />
+  <xs:complexType name="FIN_GeneralLedgerSummary">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AccountingPeriod" type="xs:short" />
+      <xs:element minOccurs="0" name="ClosingBalanceFCY" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ClosingBalanceLCY" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CreditAdjustementFCY" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CreditAdjustementLCY" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CreditMovementFCY" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CreditMovementLCY" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DebitAdjustmentFCY" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DebitAdjustmentLCY" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DebitMovementFCY" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DebitMovementLCY" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="FinancialYear" type="xs:int" />
+      <xs:element minOccurs="0" name="OpeningBalanceFCY" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="OpeningBalanceLCY" nillable="true" type="xs:decimal" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="FIN_GeneralLedgerSummary" nillable="true" type="tns:FIN_GeneralLedgerSummary" />
+  <xs:complexType name="ArrayOfFIN_GeneralLedgerSummary">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FIN_GeneralLedgerSummary" nillable="true" type="tns:FIN_GeneralLedgerSummary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFIN_GeneralLedgerSummary" nillable="true" type="tns:ArrayOfFIN_GeneralLedgerSummary" />
+  <xs:complexType name="ArrayOfFIN_PrimaryTransaction">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FIN_PrimaryTransaction" nillable="true" type="tns:FIN_PrimaryTransaction" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFIN_PrimaryTransaction" nillable="true" type="tns:ArrayOfFIN_PrimaryTransaction" />
+  <xs:complexType name="FIN_PrimaryTransaction">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ARAPTxn_Flag" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="AccountingPeriod" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="BankTxn_Flag" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="CashBank_Flag" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="CusSupTxn_Flag" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="DocCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DueDate" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="EnteredProcessDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FinancialYear" type="xs:int" />
+      <xs:element minOccurs="0" name="ProcessPeriod" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Reference1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Reference2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Reference3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubModuleCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TotalCreditAmt_LCY" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TotalDebitAmt_LCY" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TransactionStatus" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="TransactionType" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="TxCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TxSerial" type="xs:int" />
+      <xs:element minOccurs="0" name="VoucherDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="VoucherNumber" type="xs:int" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="FIN_PrimaryTransaction" nillable="true" type="tns:FIN_PrimaryTransaction" />
+  <xs:complexType name="ArrayOfFIN_ProfitLostType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FIN_ProfitLostType" nillable="true" type="tns:FIN_ProfitLostType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFIN_ProfitLostType" nillable="true" type="tns:ArrayOfFIN_ProfitLostType" />
+  <xs:complexType name="FIN_SecondaryTransaction">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AmountFCY" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="AmountLCY" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="BalanceAmountFCY" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="BalanceAmountLCY" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CostCenterCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreditDebit_Flag" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DocCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExRate" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="FinancialYear" type="xs:int" />
+      <xs:element minOccurs="0" name="GLAccountNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Reference4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Reference5" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Reference6" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TransactionStatus" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="TxCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TxSerial" type="xs:int" />
+      <xs:element minOccurs="0" name="TxnSeqNo" type="xs:int" />
+      <xs:element minOccurs="0" name="VoucherNumber" type="xs:int" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="FIN_SecondaryTransaction" nillable="true" type="tns:FIN_SecondaryTransaction" />
+  <xs:complexType name="ArrayOfFIN_SecondaryTransaction">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FIN_SecondaryTransaction" nillable="true" type="tns:FIN_SecondaryTransaction" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFIN_SecondaryTransaction" nillable="true" type="tns:ArrayOfFIN_SecondaryTransaction" />
+  <xs:complexType name="ArrayOfFIN_SpecialAccountType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FIN_SpecialAccountType" nillable="true" type="tns:FIN_SpecialAccountType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFIN_SpecialAccountType" nillable="true" type="tns:ArrayOfFIN_SpecialAccountType" />
+  <xs:complexType name="ArrayOfERP_ProcessControl">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ERP_ProcessControl" nillable="true" type="tns:ERP_ProcessControl" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfERP_ProcessControl" nillable="true" type="tns:ArrayOfERP_ProcessControl" />
+  <xs:complexType name="ERP_ProcessControl">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountingPeriod" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="FinancialYear" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="LastRevaluationPeriod" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="PreviousAccountingPeriod" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="PreviousFinancialYear" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="PreviousProcessDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PreviousProcessPeriod" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ProcessDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ProcessPeriod" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ProductCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="ERP_ProcessControl" nillable="true" type="tns:ERP_ProcessControl" />
+  <xs:complexType name="ArrayOfERP_Period">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ERP_Period" nillable="true" type="tns:ERP_Period" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfERP_Period" nillable="true" type="tns:ArrayOfERP_Period" />
+  <xs:complexType name="ERP_Period">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountingPeriod" type="xs:int" />
+      <xs:element minOccurs="0" name="EndDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FinancialYear" type="xs:int" />
+      <xs:element minOccurs="0" name="ProcessPeriod" type="xs:int" />
+      <xs:element minOccurs="0" name="ProductCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StardDate" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="ERP_Period" nillable="true" type="tns:ERP_Period" />
+  <xs:complexType name="ArrayOfHR_EMP_EMERGENCY">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_EMP_EMERGENCY" nillable="true" type="tns:HR_EMP_EMERGENCY" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_EMP_EMERGENCY" nillable="true" type="tns:ArrayOfHR_EMP_EMERGENCY" />
+  <xs:complexType name="ArrayOfHR_EMP_TRANSPORT">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_EMP_TRANSPORT" nillable="true" type="tns:HR_EMP_TRANSPORT" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_EMP_TRANSPORT" nillable="true" type="tns:ArrayOfHR_EMP_TRANSPORT" />
+  <xs:complexType name="ArrayOfHR_EMPLOYEE_TD">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_EMPLOYEE_TD" nillable="true" type="tns:HR_EMPLOYEE_TD" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_EMPLOYEE_TD" nillable="true" type="tns:ArrayOfHR_EMPLOYEE_TD" />
+  <xs:complexType name="ArrayOfHR_EMPLOYEE_OC">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_EMPLOYEE_OC" nillable="true" type="tns:HR_EMPLOYEE_OC" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_EMPLOYEE_OC" nillable="true" type="tns:ArrayOfHR_EMPLOYEE_OC" />
+  <xs:complexType name="ArrayOfHR_NATIONALITY">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_NATIONALITY" nillable="true" type="tns:HR_NATIONALITY" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_NATIONALITY" nillable="true" type="tns:ArrayOfHR_NATIONALITY" />
+  <xs:complexType name="ArrayOfHR_RELIGION">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_RELIGION" nillable="true" type="tns:HR_RELIGION" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_RELIGION" nillable="true" type="tns:ArrayOfHR_RELIGION" />
+  <xs:complexType name="ArrayOfHR_JD_CATEGORY">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_JD_CATEGORY" nillable="true" type="tns:HR_JD_CATEGORY" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_JD_CATEGORY" nillable="true" type="tns:ArrayOfHR_JD_CATEGORY" />
+  <xs:complexType name="ArrayOfFIN_AccountType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FIN_AccountType" nillable="true" type="tns:FIN_AccountType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFIN_AccountType" nillable="true" type="tns:ArrayOfFIN_AccountType" />
+  <xs:complexType name="ArrayOfFIN_Bank">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FIN_Bank" nillable="true" type="tns:FIN_Bank" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFIN_Bank" nillable="true" type="tns:ArrayOfFIN_Bank" />
+  <xs:complexType name="ERP_UnitConversion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ConversionFactor" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ERP_UnitDefinition" nillable="true" type="tns:ERP_UnitDefinition" />
+      <xs:element minOccurs="0" name="ERP_UnitDefinition1" nillable="true" type="tns:ERP_UnitDefinition" />
+      <xs:element minOccurs="0" name="FromUnitCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ToUnitCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="ERP_UnitConversion" nillable="true" type="tns:ERP_UnitConversion" />
+  <xs:complexType name="ERP_UnitDefinition">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ERP_UnitConversion" nillable="true" type="tns:ArrayOfERP_UnitConversion" />
+      <xs:element minOccurs="0" name="ERP_UnitConversion1" nillable="true" type="tns:ArrayOfERP_UnitConversion" />
+      <xs:element minOccurs="0" name="ERP_UnitDefinition1" nillable="true" type="tns:ArrayOfERP_UnitDefinition" />
+      <xs:element minOccurs="0" name="ERP_UnitDefinition2" nillable="true" type="tns:ERP_UnitDefinition" />
+      <xs:element minOccurs="0" name="MajorUnitCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StandardSyntax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UnitCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UnitDescription" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="ERP_UnitDefinition" nillable="true" type="tns:ERP_UnitDefinition" />
+  <xs:complexType name="ArrayOfERP_UnitConversion">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ERP_UnitConversion" nillable="true" type="tns:ERP_UnitConversion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfERP_UnitConversion" nillable="true" type="tns:ArrayOfERP_UnitConversion" />
+  <xs:complexType name="ArrayOfERP_UnitDefinition">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ERP_UnitDefinition" nillable="true" type="tns:ERP_UnitDefinition" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfERP_UnitDefinition" nillable="true" type="tns:ArrayOfERP_UnitDefinition" />
+  <xs:complexType name="ArrayOfFIN_Region">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FIN_Region" nillable="true" type="tns:FIN_Region" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFIN_Region" nillable="true" type="tns:ArrayOfFIN_Region" />
+  <xs:complexType name="ArrayOfERP_Document">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ERP_Document" nillable="true" type="tns:ERP_Document" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfERP_Document" nillable="true" type="tns:ArrayOfERP_Document" />
+  <xs:complexType name="ArrayOfFIN_CostCenter">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FIN_CostCenter" nillable="true" type="tns:FIN_CostCenter" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFIN_CostCenter" nillable="true" type="tns:ArrayOfFIN_CostCenter" />
+  <xs:complexType name="ArrayOfFIN_Currency">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FIN_Currency" nillable="true" type="tns:FIN_Currency" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFIN_Currency" nillable="true" type="tns:ArrayOfFIN_Currency" />
+  <xs:complexType name="ArrayOfHR_EMPLOYEE">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HR_EMPLOYEE" nillable="true" type="tns:HR_EMPLOYEE" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHR_EMPLOYEE" nillable="true" type="tns:ArrayOfHR_EMPLOYEE" />
+</xs:schema>

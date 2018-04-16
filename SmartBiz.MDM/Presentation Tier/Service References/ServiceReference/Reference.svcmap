@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="fb48ea50-3c8e-4adf-b40b-eedc0670d84e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/SmartBiz.MDMAPI.Service/MdmService/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MDMAPI.wsdl" MetadataType="Wsdl" ID="a5f456db-c7c8-4544-9663-9c5c6e838117" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SmartBiz.MDMAPI.Service/MdmService/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="fc26652e-cd1e-464e-8004-9a64f258430d" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SmartBiz.MDMAPI.Service/MdmService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="4c20b678-ef06-454f-863c-52e8e1915cd6" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SmartBiz.MDMAPI.Service/MdmService/mex" />
+    <MetadataFile FileName="PCSAPI.xsd" MetadataType="Schema" ID="ac8be898-96f8-4419-a9f7-b05a880191f0" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SmartBiz.MDMAPI.Service/MdmService/mex" />
+    <MetadataFile FileName="SmartBiz.PCSAPI.Common.Enums.xsd" MetadataType="Schema" ID="c953f469-5cc3-443d-aa89-a4033185a9f9" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SmartBiz.MDMAPI.Service/MdmService/mex" />
+    <MetadataFile FileName="System.xsd" MetadataType="Schema" ID="00354557-20a9-4019-97b2-9e808aad3333" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SmartBiz.MDMAPI.Service/MdmService/mex" />
+    <MetadataFile FileName="MDMAPI.xsd" MetadataType="Schema" ID="2a83d8fd-cae0-4fe0-aad5-0902f240b4f7" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SmartBiz.MDMAPI.Service/MdmService/mex" />
+    <MetadataFile FileName="SmartBiz.MDMAPI.Common.Entities.xsd" MetadataType="Schema" ID="b21d810e-9c4b-461b-a56d-22b5652cb5b3" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SmartBiz.MDMAPI.Service/MdmService/mex" />
+    <MetadataFile FileName="SmartBiz.MDMAPI.API.Queries.xsd" MetadataType="Schema" ID="d6e3d915-c707-4032-a37e-db3477f7500a" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SmartBiz.MDMAPI.Service/MdmService/mex" />
+    <MetadataFile FileName="SmartBiz.MDMAPI.xsd" MetadataType="Schema" ID="db95c29f-28b2-488f-ae3f-67d9c6befed9" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SmartBiz.MDMAPI.Service/MdmService/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="10df4ca0-d7f7-4965-8ae9-d02552ffd04a" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/SmartBiz.MDMAPI.Service/MdmService/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

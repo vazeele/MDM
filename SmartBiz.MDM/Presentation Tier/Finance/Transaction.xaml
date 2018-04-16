@@ -1,0 +1,506 @@
+﻿<UserControl x:Class="SmartBiz.MDM.Presentation.Transaction"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:l="clr-namespace:SmartBiz.MDM.Presentation"
+             Height="auto" Width="auto"
+             xmlns:c="clr-namespace:SmartBiz.MDM.Presentation.CustomControls">
+
+    <UserControl.Resources>
+
+        <ResourceDictionary>
+            <l:IndexConverter x:Key="IndexConverter" />
+            <l:AttributeConverter x:Key="AttributeConverter" />
+            <l:KeyConverter x:Key="KeyConverter" />
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="..\Resources\TwilightBlue.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid x:Name="GrdContainer" Margin="0,0,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="53" />
+            <RowDefinition Height="400*" MinHeight="400" />
+        </Grid.RowDefinitions>
+
+        <ToolBar x:Name="TlBar" Height="53" Width="auto" Margin="-2,-2,0,0" Grid.Row="0" ToolBarTray.IsLocked="true">
+
+            <Button x:Name="BtRefresh" Width="41" Margin="5,8,0,8" Height="32" Foreground="White" Background="{x:Null}" Click="BtRefresh_Click">
+                <StackPanel Orientation="Horizontal" Height="26" Width="auto" HorizontalAlignment="Left"
+                            VerticalAlignment="Bottom" Margin="0,-6,0,0">
+                    <StackPanel.Background>
+                        <ImageBrush />
+                    </StackPanel.Background>
+                    <StackPanel.Effect>
+                        <DropShadowEffect RenderingBias="Performance" ShadowDepth="0" Color="Black" />
+                    </StackPanel.Effect>
+                    <TextBlock  Text="P" Foreground="White" FontFamily="Wingdings 3" FontSize="20"
+                               FontWeight="Bold" Margin="0,5,0,0" />
+                </StackPanel>
+            </Button>
+
+            <Button x:Name="BtnSave" Width="auto" Margin="2" Height="32" Foreground="White" Background="{x:Null}" Click="BtSave_Click"
+                   Visibility="Collapsed">
+                <StackPanel Orientation="Horizontal"  Width="auto" HorizontalAlignment="Center" Margin="0,-4" Height="28" VerticalAlignment="Top">
+                    <StackPanel.Background>
+                        <ImageBrush />
+                    </StackPanel.Background>
+                    <StackPanel.Effect>
+                        <DropShadowEffect RenderingBias="Performance" ShadowDepth="0" Color="Black" />
+                    </StackPanel.Effect>
+                    <TextBlock Margin="5,2,5,5" Text="&lt;" Foreground="White" FontFamily="Wingdings" FontSize="20" Width="auto"
+                               FontWeight="Bold" />
+                    <TextBlock x:Name="btnSave_text" Margin="5,4,5,0" Text="Update" Foreground="WhiteSmoke" VerticalAlignment="Top"
+                               FontWeight="Bold" />
+                </StackPanel>
+            </Button>
+            <TextBlock Margin="0,0,0,10" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="20">|</TextBlock>
+            <ToggleButton x:Name="BtnAdd" Width="auto" Margin="2" Height="32" Foreground="White" Background="{x:Null}" Click="BtAdd_Click">
+                <StackPanel Orientation="Horizontal" Width="auto" HorizontalAlignment="Center" Margin="0,-4" Height="28" VerticalAlignment="Top">
+                    <StackPanel.Background>
+                        <ImageBrush />
+                    </StackPanel.Background>
+                    <StackPanel.Effect>
+                        <DropShadowEffect RenderingBias="Performance" ShadowDepth="0" Color="Black" />
+                    </StackPanel.Effect>
+                    <TextBlock Margin="5,2,5,5" Text="É" Foreground="White" FontFamily="Wingdings 2" FontSize="20" Width="auto"
+                               FontWeight="Bold" />
+                    <TextBlock x:Name="btnAdd_text" Margin="5,4,5,0" Text="Add" Foreground="WhiteSmoke" VerticalAlignment="Top"
+                               FontWeight="Bold" />
+                </StackPanel>
+            </ToggleButton>
+            <Button x:Name="btnDelete" Width="85" Margin="1" Height="32" Foreground="White" Background="{x:Null}" Click="btDelete_Click">
+                <StackPanel Orientation="Horizontal" Height="28" Width="70" HorizontalAlignment="Center"
+                            VerticalAlignment="Bottom" Margin="0,-4">
+                    <StackPanel.Background>
+                        <ImageBrush />
+                    </StackPanel.Background>
+                    <StackPanel.Effect>
+                        <DropShadowEffect RenderingBias="Performance" ShadowDepth="0" Color="Black" />
+                    </StackPanel.Effect>
+                    <TextBlock Margin="1,0,2,2" Text="O" Foreground="White" FontFamily="Wingdings 2" FontSize="30" Width="auto"
+                               FontWeight="Bold" />
+                    <TextBlock Margin="5,4,5,0" Text="Delete" Foreground="WhiteSmoke" FontFamily="Arial Unicode MS"
+                               VerticalAlignment="Top" FontWeight="Bold" Width="41" />
+                </StackPanel>
+            </Button>
+            <Button x:Name="BtnCancelUpdate" Width="auto" Margin="2" Height="32" Foreground="White" Background="{x:Null}" Click="BtnCancelUpdate_Click"
+                 Visibility="Collapsed">
+                <StackPanel Orientation="Horizontal"  Width="auto" HorizontalAlignment="Center" Margin="0,-4" Height="28" VerticalAlignment="Top">
+                    <StackPanel.Background>
+                        <ImageBrush />
+                    </StackPanel.Background>
+                    <StackPanel.Effect>
+                        <DropShadowEffect RenderingBias="Performance" ShadowDepth="0" Color="Black" />
+                    </StackPanel.Effect>
+                    <TextBlock Margin="5,2,5,5" Text="&lt;" Foreground="White" FontFamily="Wingdings" FontSize="20" Width="auto"
+                               FontWeight="Bold" />
+                    <TextBlock Margin="5,4,5,0" Text="Cancel Update" Foreground="WhiteSmoke" VerticalAlignment="Top"
+                               FontWeight="Bold" />
+                </StackPanel>
+            </Button>
+        </ToolBar>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="70" />
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="226*" />
+                    <ColumnDefinition Width="70" />
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="236*" />
+                </Grid.ColumnDefinitions>
+            </Grid>
+
+            <TabControl x:Name="TbPage" SelectedIndex="0" TabStripPlacement="Top" FontSize="16"  Grid.Row="1" Grid.Column="0" SelectionChanged="TbPage_SelectionChanged" Background="Transparent">
+                <TabItem  x:Name="tb_LastTransactionInfo" Header="Last Transaction Info" Height="30" Width="auto">
+
+                    <Grid x:Name="LastTransactionInfoGrid"  Margin="5" Width="auto" Height="auto">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="160*" />
+                            <ColumnDefinition Width="467*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Grid.ColumnSpan="2">
+                            <Grid Grid.Row="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="36" />
+                                    <RowDefinition Height="36" />
+                                    <RowDefinition Height="36" />
+                                    <RowDefinition Height="36" />
+                                    <RowDefinition Height="36" />
+                                    <RowDefinition Height="36" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="153" />
+                                    <ColumnDefinition Width="48" />
+                                    <ColumnDefinition Width="86*" />
+                                    <ColumnDefinition Width="29*" />
+                                    <ColumnDefinition Width="159" />
+                                    <ColumnDefinition Width="33" />
+                                    <ColumnDefinition Width="71*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label Content="Document Attributes" Grid.Column="0" Grid.Row="0" Margin="4,4,0,4"
+                					HorizontalAlignment="Left" Width="139" />
+                                <Label Content="Sub System Code" Grid.Column="0" Grid.Row="1" Margin="4,4,0,4"
+                					HorizontalAlignment="Left" Width="117" />
+                                <Label Content="Product Code" Grid.Column="0" Grid.Row="2" Margin="4,4,0,4"
+                					HorizontalAlignment="Left" Width="104" />
+
+                                <Label Content="Last Transaction Serial No" Grid.Column="0"  Grid.Row="3"  Margin="4,8,0,0"
+                					HorizontalAlignment="Left" Width="155" />
+                                <Label Content="Transaction Type" Grid.Column="0" Grid.Row="4" Margin="4,5,0,3"
+                					HorizontalAlignment="Left" Width="132" />
+                                <Label Content="Last Voucher No"  Grid.Column="0"
+                					Grid.Row="5" Margin="4,4,0,4" />
+
+                                <Label Content=":" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" Margin="7,0,13,0" Width="28" />
+                                <Label Content=":" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" Margin="7,0,13,0" Width="28" />
+                                <Label Content=":" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" Margin="7,0,13,0" Width="28" />
+                                <Label Content=":" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Center" Width="12" />
+                                <Label Content=":" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Center" Width="12" />
+                                <Label Content=":" Grid.Column="1" Grid.Row="5" HorizontalAlignment="Center" Width="12" />
+
+                                <c:CustomSearchDropDown x:Name="DocAttribLTIDropDown" Grid.Column="2" Grid.Row="0" VerticalAlignment="Center"
+                                   PageSize="5" PagePosition="1" IsEnabled="False" PagerHorizontalAlignment="Left"
+                				 OptionOneText="DocCode" OptionTwoText="TxnCode" OptionThreeText="Short Name"
+                                 CustomSelectedItem ="{Binding ERP_DocumentAttributes, Mode=TwoWay,ValidatesOnExceptions=True,
+                                 UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}" Margin="4,6" />
+
+                                <TextBox x:Name="txt_SubSystemCodeLTI" MaxLength="5" Grid.Column="2" Grid.Row="1"
+                					IsEnabled="False" Text="{Binding SubSystemCode,ValidatesOnExceptions=True,  UpdateSourceTrigger=PropertyChanged ,NotifyOnSourceUpdated=True}" VerticalAlignment="Center" Margin="4,8,4,6" FontWeight="Bold" Height="22" />
+                                <TextBox MaxLength="5" x:Name="txt_ProductCodeLTI" Grid.Column="2" Grid.Row="2" VerticalAlignment="Center"
+                				 IsEnabled="False" Text="{Binding ProductCode,ValidatesOnExceptions=True,  UpdateSourceTrigger=PropertyChanged ,NotifyOnSourceUpdated=True}" Margin="4,6" TextWrapping="Wrap" Height="24"  FontWeight="Bold" />
+
+                                <TextBox x:Name="txt_LastTransactionSerialNoLTI" Grid.Row="3" Grid.Column="2" VerticalAlignment="Center"
+                					Text="{Binding LastTxnSerialNo,ValidatesOnExceptions=True,  UpdateSourceTrigger=PropertyChanged ,NotifyOnSourceUpdated=True}" Margin="4,6" Height="24" MaxLength="64" FontWeight="Bold" />
+                                <ComboBox x:Name="cmb_TransactionTypLTI" Grid.Column="2" Grid.Row="4" VerticalAlignment="Center"
+                                    SelectedIndex="{Binding TransactionType, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource IndexConverter}}" Margin="4,6" Height="24">
+                                    <ComboBoxItem Content="Manual Transaction" />
+                                    <ComboBoxItem Content="Subsystem Transaction" />
+                                </ComboBox>
+                                <TextBox x:Name="txt_LastVoucherNoLTI" Grid.Column="2" Grid.Row="5" VerticalAlignment="Center"
+                					Text="{Binding LastVoucherNo,ValidatesOnExceptions=True,  UpdateSourceTrigger=PropertyChanged ,NotifyOnSourceUpdated=True}" Margin="4,6" TextWrapping="Wrap" Height="24" MaxLength="16" FontWeight="Bold" />
+                            </Grid>
+                        </ScrollViewer>
+                        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Grid.ColumnSpan="2">
+                            <c:CustomSearchControl  Height="300" OptionOneText="Product Code" OptionTwoText="Sub System Code" OptionThreeText="Doc Code"  PagePosition="1" PageSize="10" x:Name="LTISearchControl" PagerHorizontalAlignment="Center"></c:CustomSearchControl>
+                        </ScrollViewer>
+                    </Grid>
+                </TabItem>
+
+                <TabItem Name="tb_TransactionReference"  Header="Transaction Reference" Height="30">
+                    <Grid x:Name="TransactionReferenceGrid"  Margin="5" Width="auto" Height="auto">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                            <Grid Grid.Row="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="36" />
+                                    <RowDefinition Height="36" />
+                                    <RowDefinition Height="36" />
+                                    <RowDefinition Height="36" />
+                                    <RowDefinition Height="36" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="153" />
+                                    <ColumnDefinition Width="48" />
+                                    <ColumnDefinition Width="86*" />
+                                    <ColumnDefinition Width="29*" />
+                                    <ColumnDefinition Width="159" />
+                                    <ColumnDefinition Width="33" />
+                                    <ColumnDefinition Width="71*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label Content="Document Attributes " Grid.Column="0" Grid.Row="0" Margin="4,4,0,4"
+                                   HorizontalAlignment="Left" Width="139" />
+                                <Label Content="Ref Seq" Grid.Column="0" Grid.Row="1" Margin="4,4,0,4"
+                                   HorizontalAlignment="Left" Width="127" />
+                                <Label Content="Seq Number" Grid.Column="0" Grid.Row="2" Margin="4,4,0,4"
+                                   HorizontalAlignment="Left" Width="117" />
+                                <Label Content="Reference Text"  Grid.Column="0"
+                                       Grid.Row="3" Margin="4,4,0,4" />
+
+                                <Label Content=":" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" Margin="7,0,13,0" Width="28" />
+                                <Label Content=":" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" Margin="7,0,13,0" Width="28" />
+                                <Label Content=":" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" Margin="7,0,13,0" Width="28" />
+                                <Label Content=":" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" Width="26" Margin="7,0,13,0" />
+
+                                <c:CustomSearchDropDown x:Name="DocAttribTRDropDown" Grid.Column="2" Grid.Row="0" VerticalAlignment="Center"
+                                   PageSize="5" PagePosition="1" IsEnabled="False" PagerHorizontalAlignment="Left"
+                				 OptionOneText="DocCode" OptionTwoText="TxnCode" OptionThreeText="Short Name"
+                                 CustomSelectedItem ="{Binding ERP_DocumentAttributes, Mode=TwoWay,ValidatesOnExceptions=True,
+                                 UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}" Margin="4,6" />
+
+                                <TextBox x:Name="txt_RefSeqTR" Grid.Column="2" Grid.Row="1" VerticalAlignment="Center"
+                                   IsEnabled="False" Text="{Binding RefSeq,ValidatesOnExceptions=True,  UpdateSourceTrigger=PropertyChanged ,NotifyOnSourceUpdated=True}"   Margin="4,6" TextWrapping="Wrap" Height="24" MaxLength="24" FontWeight="Bold" />
+                                <TextBox x:Name="txt_SeqNoTR" Grid.Column="2" Grid.Row="2" VerticalAlignment="Center"
+                                    Text="{Binding SeqNo,ValidatesOnExceptions=True,  UpdateSourceTrigger=PropertyChanged ,NotifyOnSourceUpdated=True}" Margin="4,6" TextWrapping="Wrap" Height="24" MaxLength="16" FontWeight="Bold" />
+                                <TextBox x:Name="txt_ReferenceTextTR" Grid.Column="2" Grid.Row="3" VerticalAlignment="Center" MaxLength="16"
+                                   Text="{Binding ReferenceText,ValidatesOnExceptions=True,  UpdateSourceTrigger=PropertyChanged ,NotifyOnSourceUpdated=True}" Margin="4,6" TextWrapping="Wrap" Height="24" FontWeight="Bold" />
+                            </Grid>
+                        </ScrollViewer>
+                        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+
+                            <c:CustomSearchControl  OptionOneText="Reference Text" OptionTwoText="Ref Seq" OptionThreeText="Doc Code"  PagePosition="1" PageSize="10" x:Name="TRSearchControl" PagerHorizontalAlignment="Center"></c:CustomSearchControl>
+                        </ScrollViewer>
+                    </Grid>
+                </TabItem>
+                <TabItem Name="tb_ControlledTransaction"  Header="Controlled Transaction" Height="30">
+                    <Grid x:Name="ControlledTransactionGrid"  Margin="5" Width="auto" Height="auto">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                            <Grid Grid.Row="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="36" />
+                                    <RowDefinition Height="36" />
+                                    <RowDefinition Height="36" />
+                                    <RowDefinition Height="36" />
+                                    <RowDefinition Height="36" />
+                                    <RowDefinition Height="36" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="153" />
+                                    <ColumnDefinition Width="48" />
+                                    <ColumnDefinition Width="86*" />
+                                    <ColumnDefinition Width="29*" />
+                                    <ColumnDefinition Width="159" />
+                                    <ColumnDefinition Width="33" />
+                                    <ColumnDefinition Width="71*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label Content="Document Attributes" Grid.Column="0" Grid.Row="0" Margin="4,4,0,4"
+                                   HorizontalAlignment="Left" Width="127" />
+                                <Label Content="GL Account" Grid.Column="0" Grid.Row="1" Margin="4,4,0,4"
+                                   HorizontalAlignment="Left" Width="127" />
+                                <Label Content="Cost Center" Grid.Column="0" Grid.Row="2" Margin="4,4,0,4"
+                                   HorizontalAlignment="Left" Width="117" />
+                                <Label Content="Currency"  Grid.Column="0"
+                                       Grid.Row="3"  Margin="4,4,0,4" />
+                                <Label Content="Credit Debit Flag"  Grid.Column="0"
+                                       Grid.Row="4" Margin="4,4,0,4" />
+
+                                <Label Content=":" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" Margin="7,0,13,0" Width="28" />
+                                <Label Content=":" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" Margin="7,0,13,0" Width="28" />
+                                <Label Content=":" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" Margin="7,0,13,0" Width="28" />
+                                <Label Content=":" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" Width="26" Margin="7,0,13,0" />
+                                <Label Content=":" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Left" Width="26" Margin="7,0,13,0" />
+
+                                <c:CustomSearchDropDown x:Name="DocAttribCTDropDown" Grid.Column="2" Grid.Row="0" VerticalAlignment="Center"
+                                   PageSize="5" PagePosition="1" IsEnabled="False" PagerHorizontalAlignment="Left"
+                				 OptionOneText="DocCode" OptionTwoText="TxnCode" OptionThreeText="Short Name"
+                                 CustomSelectedItem ="{Binding ERP_DocumentAttributes, Mode=TwoWay,ValidatesOnExceptions=True,
+                                 UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}" Margin="4,6" />
+
+                                <c:CustomSearchDropDown x:Name="GLAccountCTDropDown" Grid.Column="2" Grid.Row="1" VerticalAlignment="Center"
+                                   PageSize="5" PagePosition="1" IsEnabled="False" PagerHorizontalAlignment="Left"
+                				 OptionOneText="Account No" OptionTwoText="Account Type" OptionThreeText="Account SubType"
+                                 CustomSelectedItem ="{Binding FIN_GeneralLedgerAccount, Mode=TwoWay,ValidatesOnExceptions=True,
+                                 UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}" Margin="4,6" />
+
+                                <c:CustomSearchDropDown x:Name="CostCenterCTRDropDown" Grid.Column="2" Grid.Row="2" VerticalAlignment="Center"
+                                   PageSize="5" PagePosition="1" IsEnabled="False" PagerHorizontalAlignment="Left"
+                				 OptionOneText="Cost Center Code" OptionTwoText="Cost Center Description" NoOfOptions="2"
+                                 CustomSelectedItem ="{Binding FIN_CostCenter, Mode=TwoWay,ValidatesOnExceptions=True,
+                                 UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}" Margin="4,6" />
+
+                                <c:CustomSearchDropDown x:Name="CurrencyCTDropDown" Grid.Column="2" Grid.Row="3" VerticalAlignment="Center"
+                                   PageSize="5" PagePosition="1" IsEnabled="False" PagerHorizontalAlignment="Left"
+                				 OptionOneText="Currency Code" OptionTwoText="Currency Name" NoOfOptions="2"
+                                 CustomSelectedItem ="{Binding FIN_Currency, Mode=TwoWay,ValidatesOnExceptions=True,
+                                 UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}" Margin="4,6" />
+
+                                <ComboBox x:Name="cmb_CreditDebitFlagCT" Grid.Column="2" Grid.Row="4" VerticalAlignment="Center"
+                                    SelectedIndex="{Binding CreditDebit_Flag, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource IndexConverter}}" Margin="4,6" Height="24">
+                                    <ComboBoxItem Content="Credit" />
+                                    <ComboBoxItem Content="Debit" />
+                                </ComboBox>
+                            </Grid>
+                        </ScrollViewer>
+                        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+                            <c:CustomSearchControl  OptionOneText="Doc Code" OptionTwoText="Transaction Code" OptionThreeText="GL Account Code"  PagePosition="1" PageSize="10" x:Name="CTSearchControl" PagerHorizontalAlignment="Center"></c:CustomSearchControl>
+                        </ScrollViewer>
+                    </Grid>
+                </TabItem>
+
+                <TabItem x:Name="tb_FixedTransactionAttrib"  Header="Fixed Transaction Attib" Height="30" Width="auto">
+
+                    <Grid x:Name="FixedTransactionAttribGrid" Margin="5" Width="auto" Height="auto">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                            <Grid Grid.Row="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="36" />
+                                    <RowDefinition Height="36" />
+                                    <RowDefinition Height="36" />
+                                    <RowDefinition Height="36" />
+                                    <RowDefinition Height="36" />
+                                    <RowDefinition Height="36" />
+                                    <RowDefinition Height="36" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="30.299" />
+                                    <ColumnDefinition Width="132" />
+                                    <ColumnDefinition Width="39" />
+                                    <ColumnDefinition Width="140*" />
+                                    <ColumnDefinition Width="33*" />
+                                    <ColumnDefinition Width="180" />
+                                    <ColumnDefinition Width="26" />
+                                    <ColumnDefinition Width="115*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label Content="Document Attributes" Grid.Column="0" Grid.Row="0" Margin="4,4,0,4"
+            						HorizontalAlignment="Left" Width="132" Grid.ColumnSpan="2" />
+
+                                <Label Content="General Ledger Account" Grid.Column="0" Grid.Row="1" Margin="4,4,0,4"
+            						HorizontalAlignment="Left" Width="148" Grid.ColumnSpan="2" />
+                                <Label Content="Cost Debit GLAccount" Grid.Column="0" Grid.Row="2" Margin="4,4,0,4"
+            						HorizontalAlignment="Left" Width="132" Grid.ColumnSpan="2" />
+                                <Label Content="Cost Debit CostCenter" Grid.Column="0" Grid.Row="3" Margin="4,4,0,4"
+            						HorizontalAlignment="Left" Width="161" Grid.ColumnSpan="3" />
+                                <TextBlock Text="Cost Debit Currency" TextWrapping="Wrap" Grid.Column="0"
+            						Grid.Row="4" Margin="10,4,0,0" Grid.ColumnSpan="2" />
+                                <Label Content="Cost Credit GLAccount" Grid.Row="5" Margin="4,10,0,34"
+            						HorizontalAlignment="Left" Width="132" Grid.RowSpan="2" Grid.ColumnSpan="2" />
+                                <Label Content="Cost Credit CostCenter" Grid.Row="6" Margin="4,3,0,5"
+            						HorizontalAlignment="Left" Width="170" Grid.ColumnSpan="3" />
+                                <Label Content="Cost Credit Currency" Grid.Column="5" Margin="4,8,0,0"
+            						HorizontalAlignment="Left" Width="152" Grid.Row="0" />
+                                <Label Content="Sales Debit GLAccount" Grid.Column="5" Grid.Row="1" Margin="4,5,0,3"
+            						HorizontalAlignment="Left" Width="145" />
+                                <Label Content="Sales Debit CostCenter" Grid.Column="5" Grid.Row="2" Margin="4,5,0,3"
+            						HorizontalAlignment="Left" Width="166" />
+                                <Label Content="Sales Debit Currency" Grid.Column="5" Grid.Row="3" Margin="4,5,0,3"
+            						HorizontalAlignment="Left" Width="152" />
+                                <Label Content="Sales Credit GLAccount" Grid.Column="5" Grid.Row="4" Margin="4,5,0,3"
+            						HorizontalAlignment="Left" Width="145" />
+                                <Label Content="Sales Credit CostCenter" Grid.Column="5" Grid.Row="5" Margin="4,5,0,3"
+            						HorizontalAlignment="Left" Width="155" />
+                                <Label Content="Sales Credit Currency" Grid.Column="5" Grid.Row="6" Margin="4,5,0,3"
+            						HorizontalAlignment="Left" Width="155" />
+
+                                <Label Content=":" Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center" Margin="3,0,8,0" Width="28" />
+                                <Label Content=":" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" Margin="3,0,8,0" Width="28" />
+                                <Label Content=":" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Center" Margin="3,0,8,0" Width="28" />
+                                <Label Content=":" Grid.Column="2" Grid.Row="3" HorizontalAlignment="Center" Margin="3,0,8,0" Width="28" />
+                                <Label Content=":" Grid.Column="2" Grid.Row="4" HorizontalAlignment="Left" Width="26" Margin="0,7,0,29" Grid.RowSpan="2" RenderTransformOrigin="0.892,0.545" />
+                                <Label Content=":" Grid.Column="2" Grid.Row="5" HorizontalAlignment="Center" Width="12" Margin="3,10,24,26" Grid.RowSpan="2" />
+                                <Label Content=":" Grid.Column="2" Grid.Row="6" HorizontalAlignment="Center" Width="12" Margin="3,0,24,0" />
+                                <Label Content=":" Grid.Column="6" Grid.Row="0" HorizontalAlignment="Center" Width="12" Margin="8,0,6,0" />
+                                <Label Content=":" Grid.Column="6" Grid.Row="1" HorizontalAlignment="Center" Width="12" Margin="8,0,6,0" />
+                                <Label Content=":" Grid.Column="6" Grid.Row="2" HorizontalAlignment="Center" Width="12" Margin="8,0,6,0" />
+                                <Label Content=":" Grid.Column="6" Grid.Row="3" HorizontalAlignment="Center" Width="12" Margin="8,0,6,0" />
+                                <Label Content=":" Grid.Column="6" Grid.Row="4" HorizontalAlignment="Center" Width="12" Margin="8,0,6,0" />
+                                <Label Content=":" Grid.Column="6" Grid.Row="5" HorizontalAlignment="Center" Width="12" Margin="8,0,6,0" />
+                                <Label Content=":" Grid.Column="6" Grid.Row="6" HorizontalAlignment="Center" Width="12" Margin="8,0,6,0" />
+
+                                <c:CustomSearchDropDown x:Name="DocAttribFTADropDown" Grid.Column="3" Grid.Row="0" VerticalAlignment="Center"
+                                   PageSize="5" PagePosition="1" IsEnabled="False" PagerHorizontalAlignment="Left"
+                				 OptionOneText="DocCode" OptionTwoText="TxnCode" OptionThreeText="Short Name"
+                                 CustomSelectedItem ="{Binding ERP_DocumentAttributes, Mode=TwoWay,ValidatesOnExceptions=True,
+                                 UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}" Margin="4,7" Height="22" />
+
+                                <c:CustomSearchDropDown x:Name="GLFTADropDown" Grid.Column="3" Grid.Row="1" VerticalAlignment="Center"
+                                   PageSize="5" PagePosition="1" IsEnabled="False" PagerHorizontalAlignment="Left"
+                				 OptionOneText="Account No" OptionTwoText="Account Type" OptionThreeText="Account SubType"
+                                 CustomSelectedItem ="{Binding FIN_GeneralLedgerAccount, Mode=TwoWay,ValidatesOnExceptions=True,
+                                 UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}" Margin="4,7" Height="22" />
+
+                                <c:CustomSearchDropDown x:Name="CostDbtGLFTADropDown" Grid.Column="3" Grid.Row="2" VerticalAlignment="Center"
+                                   PageSize="5" PagePosition="1"  PagerHorizontalAlignment="Left"
+                				 OptionOneText="Account No" OptionTwoText="Account Type" OptionThreeText="Account SubType"
+                                 CustomSelectedItem ="{Binding FIN_GeneralLedgerAccount1, Mode=TwoWay,ValidatesOnExceptions=True,
+                                 UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}" Margin="4,7" Height="22" />
+
+                                <c:CustomSearchDropDown x:Name="CostDbtCostCenterFTADropDown" Grid.Column="3" Grid.Row="3" VerticalAlignment="Center"
+                                   PageSize="5" PagePosition="1"  PagerHorizontalAlignment="Left"
+                				  OptionOneText="Cost Center Code" OptionTwoText="Cost Center Description" NoOfOptions="2"
+                                 CustomSelectedItem ="{Binding FIN_CostCenter, Mode=TwoWay,ValidatesOnExceptions=True,
+                                 UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}" Margin="4,7" Height="22" />
+
+                                <c:CustomSearchDropDown x:Name="CostDbtCurrencyFTADropDown" Grid.Column="3" Grid.Row="4" VerticalAlignment="Center"
+                                   PageSize="5" PagePosition="1"  PagerHorizontalAlignment="Left"
+                				 OptionOneText="Currency Code" OptionTwoText="Currency Name" NoOfOptions="2"
+                                 CustomSelectedItem ="{Binding FIN_Currency, Mode=TwoWay,ValidatesOnExceptions=True,
+                                 UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}" Margin="4,7" Height="22" />
+
+                                <c:CustomSearchDropDown x:Name="CostCrdGLFTADropDown" Grid.Column="3" Grid.Row="5" VerticalAlignment="Center"
+                                   PageSize="5" PagePosition="1"  PagerHorizontalAlignment="Left"
+                			 OptionOneText="Account No" OptionTwoText="Account Type" OptionThreeText="Account SubType"
+                                 CustomSelectedItem ="{Binding FIN_GeneralLedgerAccount2, Mode=TwoWay,ValidatesOnExceptions=True,
+                                 UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}" Margin="4,7" Height="22" />
+
+                                <c:CustomSearchDropDown x:Name="CostCrdCostCenterFTADropDown" Grid.Column="3" Grid.Row="6" VerticalAlignment="Center"
+                                   PageSize="5" PagePosition="1"  PagerHorizontalAlignment="Left"
+                			 OptionOneText="Cost Center Code" OptionTwoText="Cost Center Description" NoOfOptions="2"
+                                 CustomSelectedItem ="{Binding FIN_CostCenter1, Mode=TwoWay,ValidatesOnExceptions=True,
+                                 UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}" Margin="4,7" Height="22" />
+
+                                <c:CustomSearchDropDown x:Name="CostCrdCurrencyFTADropDown" Grid.Column="7" Grid.Row="0" VerticalAlignment="Center"
+                                   PageSize="5" PagePosition="1"  PagerHorizontalAlignment="Left"
+                				  OptionOneText="Currency Code" OptionTwoText="Currency Name" NoOfOptions="2"
+                                 CustomSelectedItem ="{Binding FIN_Currency1, Mode=TwoWay,ValidatesOnExceptions=True,
+                                 UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}" Margin="4,7" Height="22" />
+
+                                <c:CustomSearchDropDown x:Name="SalesDbtGLFTADropDown" Grid.Column="7" Grid.Row="1" VerticalAlignment="Center"
+                                   PageSize="5" PagePosition="1" PagerHorizontalAlignment="Left"
+                				 OptionOneText="Account No" OptionTwoText="Account Type" OptionThreeText="Account SubType"
+                                 CustomSelectedItem ="{Binding FIN_GeneralLedgerAccount3, Mode=TwoWay,ValidatesOnExceptions=True,
+                                 UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}" Margin="4,7" Height="22" />
+
+                                <c:CustomSearchDropDown x:Name="SalesDbtCostCenterFTADropDown" Grid.Column="7" Grid.Row="2" VerticalAlignment="Center"
+                                   PageSize="5" PagePosition="1" PagerHorizontalAlignment="Left"
+                				 OptionOneText="Cost Center Code" OptionTwoText="Cost Center Description" NoOfOptions="2"
+                                 CustomSelectedItem ="{Binding FIN_CostCenter2, Mode=TwoWay,ValidatesOnExceptions=True,
+                                 UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}" Margin="4,7" Height="22" />
+
+                                <c:CustomSearchDropDown x:Name="SalesDbtCurrencyFTADropDown" Grid.Column="7" Grid.Row="3" VerticalAlignment="Center"
+                                   PageSize="5" PagePosition="1" PagerHorizontalAlignment="Left"
+                			 OptionOneText="Currency Code" OptionTwoText="Currency Name" NoOfOptions="2"
+                                 CustomSelectedItem ="{Binding FIN_Currency2, Mode=TwoWay,ValidatesOnExceptions=True,
+                                 UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}" Margin="4,7" Height="22" />
+
+                                <c:CustomSearchDropDown x:Name="SalesCrdGLFTADropDown" Grid.Column="7" Grid.Row="4" VerticalAlignment="Center"
+                                   PageSize="5" PagePosition="1"  PagerHorizontalAlignment="Left"
+                				 OptionOneText="Account No" OptionTwoText="Account Type" OptionThreeText="Account SubType"
+                                 CustomSelectedItem ="{Binding FIN_GeneralLedgerAccount4, Mode=TwoWay,ValidatesOnExceptions=True,
+                                 UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}" Margin="4,7" Height="22" />
+
+                                <c:CustomSearchDropDown x:Name="SalesCrdCostCenterFTADropDown" Grid.Column="7" Grid.Row="5" VerticalAlignment="Center"
+                                   PageSize="5" PagePosition="1" PagerHorizontalAlignment="Left"
+                				 OptionOneText="Cost Center Code" OptionTwoText="Cost Center Description" NoOfOptions="2"
+                                 CustomSelectedItem ="{Binding FIN_CostCenter3, Mode=TwoWay,ValidatesOnExceptions=True,
+                                 UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}" Margin="4,7" Height="22" />
+
+                                <c:CustomSearchDropDown x:Name="SalesCrdCurrencyDropDown" Grid.Column="7" Grid.Row="6" VerticalAlignment="Center"
+                                   PageSize="5" PagePosition="1"  PagerHorizontalAlignment="Left"
+                				 OptionOneText="Currency Code" OptionTwoText="Currency Name" NoOfOptions="2"
+                                 CustomSelectedItem ="{Binding FIN_Currency3, Mode=TwoWay,ValidatesOnExceptions=True,
+                                 UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}" Margin="4,7" Height="22" />
+                            </Grid>
+                        </ScrollViewer>
+
+                        <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Row="1">
+                            <c:CustomSearchControl  OptionOneText="Doc Code" OptionTwoText="Transaction Code" OptionThreeText="General Ledger Account Code" PagePosition="1" PageSize="5" x:Name="FTASearchControl" PagerHorizontalAlignment="Center"></c:CustomSearchControl>
+                        </ScrollViewer>
+                    </Grid>
+                </TabItem>
+            </TabControl>
+        </Grid>
+    </Grid>
+</UserControl>

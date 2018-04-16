@@ -1,0 +1,752 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6C47C9AE-D6A1-4818-9608-77A72A103D56}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SmartBiz.MDM.Presentation</RootNamespace>
+    <AssemblyName>MDMUI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Comments.cs" />
+    <Compile Include="CustomControls\CustomCombo.cs" />
+    <Compile Include="CustomControls\CustomPager.xaml.cs">
+      <DependentUpon>CustomPager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\CustomSearchControl.xaml.cs">
+      <DependentUpon>CustomSearchControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\HelpControl.xaml.cs">
+      <DependentUpon>HelpControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\PageButton.cs" />
+    <Compile Include="CustomControls\CustomSearchDropDown.xaml.cs">
+      <DependentUpon>CustomSearchDropDown.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\Accounts.xaml.cs">
+      <DependentUpon>Accounts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\AgentBrokerSalesMan.xaml.cs">
+      <DependentUpon>AgentBrokerSalesMan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\AreaRegion.xaml.cs">
+      <DependentUpon>AreaRegion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\Bank.xaml.cs">
+      <DependentUpon>Bank.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\CostCenter.xaml.cs">
+      <DependentUpon>CostCenter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\Currency.xaml.cs">
+      <DependentUpon>Currency.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\Customer.xaml.cs">
+      <DependentUpon>Customer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\Document.xaml.cs">
+      <DependentUpon>Document.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\Production.xaml.cs">
+      <DependentUpon>Production.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\Unit.xaml.cs">
+      <DependentUpon>Unit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HostFrame.xaml.cs">
+      <DependentUpon>HostFrame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers.cs" />
+    <Compile Include="HR\EmergencyContact.xaml.cs">
+      <DependentUpon>EmergencyContact.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HR\HRBenefits.xaml.cs">
+      <DependentUpon>HRBenefits.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HR\HREmployeeBank.xaml.cs">
+      <DependentUpon>HREmployeeBank.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HR\Employee.xaml.cs">
+      <DependentUpon>Employee.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HR\HREmployeePassport.xaml.cs">
+      <DependentUpon>HREmployeePassport.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HR\HREmployeeQualification.xaml.cs">
+      <DependentUpon>HREmployeeQualification.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HR\HREmployeeWorkExperience.xaml.cs">
+      <DependentUpon>HREmployeeWorkExperience.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HR\HREmployeeMemberDetail.xaml.cs">
+      <DependentUpon>HREmployeeMemberDetail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HR\HRLanguages.xaml.cs">
+      <DependentUpon>HRLanguages.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HR\Reporting.xaml.cs">
+      <DependentUpon>Reporting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HR\JobSpecification.xaml.cs">
+      <DependentUpon>JobSpecification.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HR\Training.xaml.cs">
+      <DependentUpon>Training.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HR\BasicSalary.xaml.cs">
+      <DependentUpon>BasicSalary.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HR\TransportDetail.xaml.cs">
+      <DependentUpon>TransportDetail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HR\Warning.xaml.cs">
+      <DependentUpon>Warning.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountSubTypeCategoryModel.cs" />
+    <Compile Include="Models\AccountSubTypeSearchModel.cs" />
+    <Compile Include="Models\AgentBrokerSalesManModel.cs" />
+    <Compile Include="Models\AreaModel.cs" />
+    <Compile Include="Models\BankAccountModel.cs" />
+    <Compile Include="Models\BankBranchModel.cs" />
+    <Compile Include="Models\BankModel.cs" />
+    <Compile Include="Models\CorporateTitleModel.cs" />
+    <Compile Include="Models\CostCenterwiseConfigurationModel.cs" />
+    <Compile Include="Models\CurrencyExchangeRateModel.cs" />
+    <Compile Include="Models\CustomerSupplierModel.cs" />
+    <Compile Include="Models\DesignationModel.cs" />
+    <Compile Include="Models\DocumentAttributesBankInfoModel.cs" />
+    <Compile Include="Models\DocumentAttributesRefModel.cs" />
+    <Compile Include="Models\EmployeeJIModel.cs" />
+    <Compile Include="Models\EmployeeJSModel.cs" />
+    <Compile Include="Models\EmployeePDModel.cs" />
+    <Compile Include="Models\EmployeeOCModel.cs" />
+    <Compile Include="Models\EmployeePCModel.cs" />
+    <Compile Include="Models\EmployeeCDWDModel.cs" />
+    <Compile Include="Models\EmployeeEIMWSModel.cs" />
+    <Compile Include="Models\FixedTxnAttributesModel.cs" />
+    <Compile Include="Models\CostCenterModel.cs" />
+    <Compile Include="Models\CurrencyModel.cs" />
+    <Compile Include="Models\DocumentModel.cs" />
+    <Compile Include="Models\EmergencyContactModel.cs" />
+    <Compile Include="Models\EmployeeModel.cs" />
+    <Compile Include="Models\GeneralLedgerAccountModel.cs" />
+    <Compile Include="Models\ControlledTransactionModel.cs" />
+    <Compile Include="Models\HRBankBranchModel.cs" />
+    <Compile Include="Models\HRBankModel.cs" />
+    <Compile Include="Models\HREmpBankModel.cs" />
+    <Compile Include="Models\HRCashBenefitModel.cs" />
+    <Compile Include="Models\HREmpCashBenefitModel.cs" />
+    <Compile Include="Models\HREmpLanguageModel.cs" />
+    <Compile Include="Models\HREmpNonCashBenefitModel.cs" />
+    <Compile Include="Models\HREmpPassportModel.cs" />
+    <Compile Include="Models\HRLanguageModel.cs" />
+    <Compile Include="Models\HRNonCashBenefitModel.cs" />
+    <Compile Include="Models\CurrencyModel2.cs" />
+    <Compile Include="Models\JDCategoryModel.cs" />
+    <Compile Include="Models\HRWorkExperienceModel.cs" />
+    <Compile Include="Models\EmployeeTDModel.cs" />
+    <Compile Include="Models\NationalityModel.cs" />
+    <Compile Include="Models\PeriodModel.cs" />
+    <Compile Include="Models\ProcessControlModel.cs" />
+    <Compile Include="Models\RegionModel.cs" />
+    <Compile Include="Models\HRCountryModel.cs" />
+    <Compile Include="Models\ReligionModel.cs" />
+    <Compile Include="Models\SalaryGradeModel.cs" />
+    <Compile Include="Models\SpecialAccountTypeModel.cs" />
+    <Compile Include="Models\ProfitLossModel.cs" />
+    <Compile Include="Models\AccountTypeSearchModel.cs" />
+    <Compile Include="Models\DocumentAttributesModel.cs" />
+    <Compile Include="Models\AccountTypeModel.cs" />
+    <Compile Include="Models\AccountSubTypeModel.cs" />
+    <Compile Include="Models\LastTransactionInfoModel.cs" />
+    <Compile Include="Models\BasicSalaryModel.cs" />
+    <Compile Include="Models\ReportingModel.cs" />
+    <Compile Include="Models\JobSpecificationModel.cs" />
+    <Compile Include="Models\TrainingModel.cs" />
+    <Compile Include="Models\TransactionReferenceModel.cs" />
+    <Compile Include="Models\TransportDetailModel.cs" />
+    <Compile Include="Models\UnitConversionModel.cs" />
+    <Compile Include="Models\UnitDefinitionModel.cs" />
+    <Compile Include="Models\WarningModel.cs" />
+    <Compile Include="Finance\Transaction.xaml.cs">
+      <DependentUpon>Transaction.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReportViewer.xaml.cs">
+      <DependentUpon>ReportViewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Page Include="CustomControls\CustomPager.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CustomControls\CustomSearchControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CustomControls\CustomSearchDropDown.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomControls\HelpControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Finance\Accounts.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Finance\AgentBrokerSalesMan.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Finance\AreaRegion.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Finance\Bank.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Finance\CostCenter.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Finance\Currency.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Finance\Customer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Finance\Document.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Finance\Production.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Finance\Unit.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HostFrame.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HR\EmergencyContact.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HR\HRBenefits.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HR\HREmployeeBank.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HR\Employee.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HR\HREmployeePassport.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HR\HREmployeeQualification.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HR\HREmployeeWorkExperience.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HR\HREmployeeMemberDetail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HR\HRLanguages.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HR\Reporting.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HR\JobSpecification.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HR\Training.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HR\BasicSalary.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HR\TransportDetail.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HR\Warning.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ReportViewer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Brushes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\ExpressionDark.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\FunctionBoxTitleBarStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\TwilightBlue.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Finance\Transaction.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.ERP_AgentBrokerSalesMan.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.ERP_Document.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.ERP_DocumentAttributes.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.ERP_DocumentAttributesBankInfo.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.ERP_DocumentAttributesRef.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.ERP_FixedTxnAttributes.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.ERP_LastTransactionInfo.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.ERP_Period.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.ERP_ProcessControl.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.ERP_SubModule.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.ERP_UnitConversion.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.ERP_UnitDefinition.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.FIN_AccountSubType.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.FIN_AccountSubTypeCategory.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.FIN_AccountType.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.FIN_Area.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.FIN_Bank.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.FIN_BankAccount.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.FIN_BankBranch.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.FIN_ControledTransaction.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.FIN_CostCenter.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.FIN_CostCenterwiseConfiguration.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.FIN_Currency.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.FIN_CurrencyExchangeRate.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.FIN_CustomerSupplierBank.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.FIN_CustomerSupplier_Info.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.FIN_CustSupPeriodBalance.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.FIN_GeneralLedgerAccount.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.FIN_GeneralLedgerSummary.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.FIN_PrimaryTransaction.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.FIN_ProfitLostType.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.FIN_Region.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.FIN_SecondaryTransaction.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.FIN_SpecialAccountType.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.FIN_TxnReference.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.HR_CASH_BENEFIT.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.HR_EMPLOYEE.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.HR_EMPLOYEE_CDWD.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.HR_EMPLOYEE_EIM_WS.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.HR_EMPLOYEE_JI.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.HR_EMPLOYEE_JS.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.HR_EMPLOYEE_OC.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.HR_EMPLOYEE_PC.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.HR_EMPLOYEE_PD.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.HR_EMPLOYEE_TD.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.HR_EMP_ATTACHMENT.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.HR_EMP_BANK.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.HR_EMP_BASICSALARY.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.HR_EMP_CASH_BENEFIT.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.HR_EMP_EMERGENCY.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.HR_EMP_JOBSPEC.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.HR_EMP_LANGUAGE1.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.HR_EMP_NONCASH_BENEFIT.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.HR_EMP_PASSPORT.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.HR_EMP_QUALIFICATION.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.HR_EMP_RELATIONINFO.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.HR_EMP_REPORTTO.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.HR_EMP_TRAININGS.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.HR_EMP_TRANSPORT.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.HR_EMP_WARNINGS.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.HR_EMP_WORK_EXPERIENCE.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.HR_LANGUAGE1.datasource" />
+    <None Include="Properties\DataSources\SmartBiz.MDMAPI.Common.Entities.HR_NONCASH_BENEFIT.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="Resources\Thumbs.db" />
+    <None Include="Service References\ServiceReference\Arrays.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference\MDMAPI.wsdl" />
+    <None Include="Service References\ServiceReference\MDMAPI.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference\PCSAPI.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference\service.wsdl" />
+    <None Include="Service References\ServiceReference\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ApiAck.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfERP_AgentBrokerSalesManQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfERP_DocumentAttributesBankInfoQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfERP_DocumentAttributesQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfERP_DocumentAttributesRefQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfERP_DocumentQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfERP_FixedTxnAttributesQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfERP_LastTransactionInfoQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfERP_PeriodQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfERP_ProcessControlQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfERP_UnitConversionQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfERP_UnitDefinitionQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfFIN_AccountSubTypeCategoryQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfFIN_AccountSubTypeQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfFIN_AccountTypeQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfFIN_AreaQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfFIN_BankAccountQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfFIN_BankBranchQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfFIN_BankQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfFIN_ControledTransactionQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfFIN_CostCenterQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfFIN_CostCenterwiseConfigurationQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfFIN_CurrencyExchangeRateQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfFIN_CurrencyQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfFIN_CustomerSupplier_InfoQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfFIN_GeneralLedgerAccountQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfFIN_PrimaryTransactionQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfFIN_ProfitLostTypeQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfFIN_RegionQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfFIN_SpecialAccountTypeQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfFIN_TxnReferenceQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_BANKQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_BRANCHQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_CASH_BENEFITQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_CORPORATE_TITLEQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_COUNTRYQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_CURRENCYQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_DESIGNATIONQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_EMPLOYEEQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_EMPLOYEE_CDWDQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_EMPLOYEE_EIM_WSQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_EMPLOYEE_JIQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_EMPLOYEE_JSQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_EMPLOYEE_OCQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_EMPLOYEE_PCQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_EMPLOYEE_PDQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_EMPLOYEE_TDQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_EMP_BANKQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_EMP_BASICSALARYQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_EMP_CASH_BENEFITQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_EMP_EMERGENCYQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_EMP_JOBSPECQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_EMP_LANGUAGEQs8NXess1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_EMP_NONCASH_BENEFITQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_EMP_PASSPORTQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_EMP_QUALIFICATIONQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_EMP_REPORTTOQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_EMP_TRAININGSQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_EMP_TRANSPORTQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_EMP_WARNINGSQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_EMP_WORK_EXPERIENCEQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_JD_CATEGORYQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_LANGUAGEQs8NXess1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_NATIONALITYQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_NONCASH_BENEFITQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_RELIGIONQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDM.Presentation.ServiceReference.ResultDTOOfHR_SALARY_GRADEQs8NXess.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDMAPI.API.Queries.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDMAPI.Common.Entities.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.MDMAPI.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference\SmartBiz.PCSAPI.Common.Enums.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference\System.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\License.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Configurations\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Application Tier\SmartBiz.MDMAPI.Common\SmartBiz.MDMAPI.Common.csproj">
+      <Project>{81c954ff-91f7-4d04-8c23-2a0d6d284724}</Project>
+      <Name>SmartBiz.MDMAPI.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

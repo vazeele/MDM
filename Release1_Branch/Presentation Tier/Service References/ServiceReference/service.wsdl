@@ -1,0 +1,4018 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://www.SmartBiz.com/MDMAPI" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MdmService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://www.SmartBiz.com/MDMAPI" location="" />
+  <wsdl:types />
+  <wsdl:binding name="BasicHttpBinding_MdmService" type="i0:MdmService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateTraining">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateTraining" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadTrainingByKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadTrainingByKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllTraining">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllTraining" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTraining">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateTraining" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTraining">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteTraining" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExistTraining">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ExistTraining" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryWarning">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryWarning" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateWarning">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateWarning" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadWarningByKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadWarningByKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllWarning">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllWarning" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWarning">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateWarning" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWarning">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteWarning" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExistWarning">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ExistWarning" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateEMPQUALIFICATION">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateEMPQUALIFICATION" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEMPQUALIFICATIONbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadEMPQUALIFICATIONbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllEMPQUALIFICATION">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllEMPQUALIFICATION" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEMPQUALIFICATION">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadEMPQUALIFICATION" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEMPQUALIFICATION">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateEMPQUALIFICATION" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEMPQUALIFICATION">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteEMPQUALIFICATION" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EMPQUALIFICATIONExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/EMPQUALIFICATIONExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryEMPQUALIFICATION">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryEMPQUALIFICATION" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateEMPWORK">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateEMPWORK" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEMPWORKbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadEMPWORKbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllEMPWORK">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllEMPWORK" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEMPWORK">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadEMPWORK" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEMPWORK">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateEMPWORK" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEMPWORK">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteEMPWORK" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EMPWORKExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/EMPWORKExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryEMPWORKEXPERIENCE">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryEMPWORKEXPERIENCE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryHRCashBenefits">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryHRCashBenefits" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateHRCashBenefit">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateHRCashBenefit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadHRCashBenefitbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadHRCashBenefitbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllHRCashBenefit">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllHRCashBenefit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadHRCashBenefit">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadHRCashBenefit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateHRCashBenefit">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateHRCashBenefit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteHRCashBenefit">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteHRCashBenefit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HRCashBenefitExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/HRCashBenefitExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryHRNonCashBenefits">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryHRNonCashBenefits" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateHRNonCashBenefit">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateHRNonCashBenefit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadHRNonCashBenefitbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadHRNonCashBenefitbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllHRNonCashBenefit">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllHRNonCashBenefit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadHRNonCashBenefit">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadHRNonCashBenefit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateHRNonCashBenefit">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateHRNonCashBenefit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteHRNonCashBenefit">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteHRNonCashBenefit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HRNonCashBenefitExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/HRNonCashBenefitExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryHREmpCashBenefits">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryHREmpCashBenefits" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateHREmpCashBenefits">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateHREmpCashBenefits" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadHREmpCashBenefitsbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadHREmpCashBenefitsbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllHREmpCashBenefit">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllHREmpCashBenefit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadHREmpCashBenefits">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadHREmpCashBenefits" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateHREmpCashBenefits">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateHREmpCashBenefits" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteHREmpCashBenefits">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteHREmpCashBenefits" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HREmpCashBenefitsExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/HREmpCashBenefitsExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryHREmpNonCashBenefits">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryHREmpNonCashBenefits" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateHREmpNonCashBenefits">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateHREmpNonCashBenefits" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadHREmpNonCashBenefitsbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadHREmpNonCashBenefitsbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllHREmpNonCashBenefit">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllHREmpNonCashBenefit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadHREmpNonCashBenefits">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadHREmpNonCashBenefits" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateHREmpNonCashBenefits">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateHREmpNonCashBenefits" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteHREmpNonCashBenefits">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteHREmpNonCashBenefits" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HREmpNonCashBenefitsExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/HREmpNonCashBenefitsExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadCustomerSupplierInfo">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadCustomerSupplierInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerSupplierInfo">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateCustomerSupplierInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCustomerSupplierInfo">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteCustomerSupplierInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerSupplierInfoExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CustomerSupplierInfoExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCustomerSupplierBank">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateCustomerSupplierBank" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadCustomerSupplierBankbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadCustomerSupplierBankbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllCustomerSupplierBank">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllCustomerSupplierBank" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadCustomerSupplierBank">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadCustomerSupplierBank" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerSupplierBank">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateCustomerSupplierBank" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCustomerSupplierBank">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteCustomerSupplierBank" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerSupplierBankExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CustomerSupplierBankExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCustSupPeriodBalance">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateCustSupPeriodBalance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadCustSupPeriodBalancebyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadCustSupPeriodBalancebyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllCustSupPeriodBalance">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllCustSupPeriodBalance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadCustSupPeriodBalance">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadCustSupPeriodBalance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustSupPeriodBalance">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateCustSupPeriodBalance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCustSupPeriodBalance">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteCustSupPeriodBalance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustSupPeriodBalanceExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CustSupPeriodBalanceExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateGeneralLedgerSummary">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateGeneralLedgerSummary" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadGeneralLedgerSummarybyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadGeneralLedgerSummarybyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllGeneralLedgerSummary">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllGeneralLedgerSummary" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadGeneralLedgerSummary">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadGeneralLedgerSummary" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGeneralLedgerSummary">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateGeneralLedgerSummary" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteGeneralLedgerSummary">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteGeneralLedgerSummary" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GeneralLedgerSummaryExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/GeneralLedgerSummaryExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryPrimaryTransaction">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryPrimaryTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePrimaryTransaction">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreatePrimaryTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadPrimaryTransactionbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadPrimaryTransactionbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllPrimaryTransaction">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllPrimaryTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadPrimaryTransaction">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadPrimaryTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePrimaryTransaction">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdatePrimaryTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePrimaryTransaction">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeletePrimaryTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrimaryTransactionExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/PrimaryTransactionExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryProfitLostType">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryProfitLostType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateProfitLostType">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateProfitLostType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadProfitLostTypebyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadProfitLostTypebyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllProfitLostType">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllProfitLostType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadProfitLostType">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadProfitLostType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProfitLostType">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateProfitLostType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProfitLostType">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteProfitLostType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProfitLostTypeExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ProfitLostTypeExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSecondaryTransaction">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateSecondaryTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadSecondaryTransactionbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadSecondaryTransactionbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllSecondaryTransaction">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllSecondaryTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadSecondaryTransaction">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadSecondaryTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSecondaryTransaction">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateSecondaryTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSecondaryTransaction">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteSecondaryTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SecondaryTransactionExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/SecondaryTransactionExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QuerySpecialAccountType">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QuerySpecialAccountType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSpecialAccountType">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateSpecialAccountType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadSpecialAccountTypebyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadSpecialAccountTypebyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllSpecialAccountType">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllSpecialAccountType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadSpecialAccountType">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadSpecialAccountType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSpecialAccountType">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateSpecialAccountType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSpecialAccountType">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteSpecialAccountType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpecialAccountTypeExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/SpecialAccountTypeExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateTxnReference">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateTxnReference" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryTxnReference">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryTxnReference" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadTxnReferencebyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadTxnReferencebyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllTxnReference">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllTxnReference" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadTxnReference">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadTxnReference" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTxnReference">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateTxnReference" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTxnReference">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteTxnReference" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TxnReferenceExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/TxnReferenceExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateEMPATTACHMENT">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateEMPATTACHMENT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEMPATTACHMENTbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadEMPATTACHMENTbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllEMPATTACHMENT">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllEMPATTACHMENT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEMPATTACHMENT">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadEMPATTACHMENT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEMPATTACHMENT">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateEMPATTACHMENT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEMPATTACHMENT">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteEMPATTACHMENT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EMPATTACHMENTExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/EMPATTACHMENTExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateEMPBANK">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateEMPBANK" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEMPBANKbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadEMPBANKbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllEMPBANK">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllEMPBANK" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEMPBANK">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadEMPBANK" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEMPBANK">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateEMPBANK" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEMPBANK">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteEMPBANK" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EMPBANKExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/EMPBANKExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateEMPPASSPORT">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateEMPPASSPORT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEMPPASSPORTbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadEMPPASSPORTbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllEMPPASSPORT">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllEMPPASSPORT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEMPPASSPORT">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadEMPPASSPORT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEMPPASSPORT">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateEMPPASSPORT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEMPPASSPORT">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteEMPPASSPORT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EMPPASSPORTExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/EMPPASSPORTExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateHRDependent">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateHRDependent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryHRDependent">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryHRDependent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HRDependentExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/HRDependentExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadHRDependentbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadHRDependentbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllHRDependent">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllHRDependent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateHRDependent">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateHRDependent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteHRDependent">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteHRDependent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCurrencyExchangeRate">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateCurrencyExchangeRate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadCurrencyExchangeRateByKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadCurrencyExchangeRateByKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllCurrencyExchangeRate">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllCurrencyExchangeRate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCurrencyExchangeRate">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateCurrencyExchangeRate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCurrencyExchangeRate">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteCurrencyExchangeRate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExistCurrencyExchangeRate">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ExistCurrencyExchangeRate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryCurrencyExchangeRate">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryCurrencyExchangeRate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryProcessControl">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryProcessControl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateProcessControl">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateProcessControl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadProcessControlByKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadProcessControlByKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllProcessControl">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllProcessControl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProcessControl">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateProcessControl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProcessControl">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteProcessControl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExistProcessControl">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ExistProcessControl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryPeriod">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryPeriod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePeriod">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreatePeriod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadPeriodByKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadPeriodByKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllPeriod">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllPeriod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePeriod">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdatePeriod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePeriod">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeletePeriod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExistPeriod">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ExistPeriod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryEmergency">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryEmergency" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateEmergency">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateEmergency" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmergencyByKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadEmergencyByKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllEmergency">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllEmergency" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEmergency">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateEmergency" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEmergency">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteEmergency" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExistEmergency">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ExistEmergency" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryTransport">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryTransport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateTransport">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateTransport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadTransportByKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadTransportByKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllTransport">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllTransport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTransport">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateTransport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTransport">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteTransport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExistTransport">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ExistTransport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryTraining">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryTraining" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeeJSbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadEmployeeJSbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllEmployeeJS">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllEmployeeJS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeeJS">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadEmployeeJS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEmployeeJS">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateEmployeeJS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEmployeeJS">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteEmployeeJS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeJSExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/EmployeeJSExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryEmployeeJS">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryEmployeeJS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateEmployeeTD">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateEmployeeTD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeeTDbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadEmployeeTDbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllEmployeeTD">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllEmployeeTD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeeTD">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadEmployeeTD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEmployeeTD">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateEmployeeTD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEmployeeTD">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteEmployeeTD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeTDExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/EmployeeTDExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryEmployeeTD">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryEmployeeTD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateEmployeePC">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateEmployeePC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeePCbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadEmployeePCbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllEmployeePC">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllEmployeePC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeePC">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadEmployeePC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEmployeePC">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateEmployeePC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEmployeePC">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteEmployeePC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmployeePCExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/EmployeePCExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryEmployeePC">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryEmployeePC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateEmployeeCDWD">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateEmployeeCDWD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeeCDWDbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadEmployeeCDWDbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllEmployeeCDWD">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllEmployeeCDWD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeeCDWD">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadEmployeeCDWD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEmployeeCDWD">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateEmployeeCDWD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEmployeeCDWD">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteEmployeeCDWD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeCDWDExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/EmployeeCDWDExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryEmployeeCDWD">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryEmployeeCDWD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateEmployeeOC">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateEmployeeOC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeeOCbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadEmployeeOCbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllEmployeeOC">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllEmployeeOC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeeOC">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadEmployeeOC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEmployeeOC">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateEmployeeOC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEmployeeOC">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteEmployeeOC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeOCExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/EmployeeOCExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryEmployeeOC">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryEmployeeOC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateEmployeeEIMWS">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateEmployeeEIMWS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeeEIMWSbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadEmployeeEIMWSbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllEmployeeEIMWS">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllEmployeeEIMWS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeeEIMWS">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadEmployeeEIMWS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEmployeeEIMWS">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateEmployeeEIMWS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEmployeeEIMWS">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteEmployeeEIMWS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeEIMWSExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/EmployeeEIMWSExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryEmployeeEIMWS">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryEmployeeEIMWS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryNationality">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryNationality" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryReligion">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryReligion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QuerySalaryGrade">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QuerySalaryGrade" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryCorporateTitle">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryCorporateTitle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryDesignation">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryDesignation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryJDCategory">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryJDCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateFixedTxnAttributes">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateFixedTxnAttributes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadFixedTxnAttributesbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadFixedTxnAttributesbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllFixedTxnAttributes">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllFixedTxnAttributes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadFixedTxnAttributes">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadFixedTxnAttributes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFixedTxnAttributes">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateFixedTxnAttributes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFixedTxnAttributes">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteFixedTxnAttributes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FixedTxnAttributesExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/FixedTxnAttributesExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryFixedTransactionAttributes">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryFixedTransactionAttributes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryLastTransactionInfo">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryLastTransactionInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateLastTransactionInfo">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateLastTransactionInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadLastTransactionInfobyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadLastTransactionInfobyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllLastTransactionInfo">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllLastTransactionInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadLastTransactionInfo">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadLastTransactionInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLastTransactionInfo">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateLastTransactionInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLastTransactionInfo">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteLastTransactionInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastTransactionInfoExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/LastTransactionInfoExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryAccountSubType">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryAccountSubType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAccountSubType">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateAccountSubType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAccountSubTypebyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAccountSubTypebyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllAccountSubType">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllAccountSubType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAccountSubType">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAccountSubType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAccountSubType">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateAccountSubType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAccountSubType">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteAccountSubType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AccountSubTypeExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/AccountSubTypeExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryAccountSubTypeCategory">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryAccountSubTypeCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAccountSubTypeCategory">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateAccountSubTypeCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAccountSubTypeCategorybyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAccountSubTypeCategorybyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllAccountSubTypeCategory">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllAccountSubTypeCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAccountSubTypeCategory">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAccountSubTypeCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAccountSubTypeCategory">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateAccountSubTypeCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAccountSubTypeCategory">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteAccountSubTypeCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AccountSubTypeCategoryExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/AccountSubTypeCategoryExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryAccountType">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryAccountType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAccountType">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateAccountType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAccountTypebyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAccountTypebyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllAccountType">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllAccountType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAccountType">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAccountType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAccountType">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateAccountType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAccountType">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteAccountType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AccountTypeExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/AccountTypeExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateBank">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateBank" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadBankbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadBankbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllBank">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllBank" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadBank">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadBank" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBank">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateBank" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBank">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteBank" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BankExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/BankExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryBank">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryBank" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateBankAccount">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateBankAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadBankAccountbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadBankAccountbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllBankAccount">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllBankAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadBankAccount">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadBankAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBankAccount">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateBankAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBankAccount">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteBankAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BankAccountExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/BankAccountExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryBankAccount">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryBankAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateBankBranch">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateBankBranch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadBankBranchbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadBankBranchbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllBankBranch">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllBankBranch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadBankBranch">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadBankBranch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBankBranch">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateBankBranch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBankBranch">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteBankBranch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BankBranchExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/BankBranchExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryBankBranch">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryBankBranch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryControlledTransaction">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryControlledTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateControledTransaction">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateControledTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadControledTransactionbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadControledTransactionbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllControledTransaction">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllControledTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadControledTransaction">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadControledTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateControledTransaction">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateControledTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteControledTransaction">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteControledTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ControledTransactionExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ControledTransactionExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCustomerSupplierInfo">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateCustomerSupplierInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadCustomerSupplierInfobyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadCustomerSupplierInfobyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllCustomerSupplierInfo">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllCustomerSupplierInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAgentBrokerSalesMan">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateAgentBrokerSalesMan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAgentBrokerSalesManbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAgentBrokerSalesManbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllAgentBrokerSalesMan">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllAgentBrokerSalesMan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAgentBrokerSalesMan">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAgentBrokerSalesMan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAgentBrokerSalesMan">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateAgentBrokerSalesMan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAgentBrokerSalesMan">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteAgentBrokerSalesMan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryAgentBrokerSalesMan">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryAgentBrokerSalesMan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgentBrokerSalesManExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/AgentBrokerSalesManExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUnitConversion">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateUnitConversion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadUnitConversionbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadUnitConversionbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllUnitConversion">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllUnitConversion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadUnitConversion">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadUnitConversion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUnitConversion">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateUnitConversion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUnitConversion">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteUnitConversion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryUnitConversion">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryUnitConversion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnitConversionExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UnitConversionExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUnitDefinition">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateUnitDefinition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadUnitDefinitionbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadUnitDefinitionbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllUnitDefinition">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllUnitDefinition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadUnitDefinition">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadUnitDefinition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUnitDefinition">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateUnitDefinition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUnitDefinition">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteUnitDefinition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryUnitDefinition">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryUnitDefinition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnitDefinitionExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UnitDefinitionExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateRegion">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateRegion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadRegionbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadRegionbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllRegion">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllRegion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadRegion">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadRegion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRegion">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateRegion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRegion">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteRegion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegionExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/RegionExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryRegion">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryRegion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateArea">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateArea" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAreabyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAreabyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllArea">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllArea" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadArea">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadArea" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateArea">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateArea" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteArea">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteArea" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AreaExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/AreaExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryArea">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryArea" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateDocument">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryDocument">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocumentExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DocumentExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadDocumentbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadDocumentbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllDocument">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadDocument">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDocument">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDocument">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateDocumentAttributes">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateDocumentAttributes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryDocumentAttributes">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryDocumentAttributes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocumentAttributesExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DocumentAttributesExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadDocumentAttributesbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadDocumentAttributesbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllDocumentAttributes">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllDocumentAttributes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadDocumentAttributes">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadDocumentAttributes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDocumentAttributes">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateDocumentAttributes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDocumentAttributes">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteDocumentAttributes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateDocumentAttributesBankInfo">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateDocumentAttributesBankInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryDocumentAttributesBankInfo">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryDocumentAttributesBankInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocumentAttributesBankInfoExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DocumentAttributesBankInfoExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadDocumentAttributesBankInfobyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadDocumentAttributesBankInfobyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllDocumentAttributesBankInfo">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllDocumentAttributesBankInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadDocumentAttributesBankInfo">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadDocumentAttributesBankInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDocumentAttributesBankInfo">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateDocumentAttributesBankInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDocumentAttributesBankInfo">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteDocumentAttributesBankInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateDocumentAttributesRef">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateDocumentAttributesRef" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryDocumentAttributesRef">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryDocumentAttributesRef" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocumentAttributesRefExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DocumentAttributesRefExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadDocumentAttributesRefbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadDocumentAttributesRefbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllDocumentAttributesRef">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllDocumentAttributesRef" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadDocumentAttributesRef">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadDocumentAttributesRef" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDocumentAttributesRef">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateDocumentAttributesRef" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDocumentAttributesRef">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteDocumentAttributesRef" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCostCenter">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateCostCenter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryCostCenter">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryCostCenter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CostCenterExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CostCenterExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadCostCenterbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadCostCenterbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllCostCenter">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllCostCenter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadCostCenter">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadCostCenter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCostCenter">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateCostCenter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCostCenter">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteCostCenter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCostCenterwiseConfiguration">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateCostCenterwiseConfiguration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryCostCenterwiseConfiguration">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryCostCenterwiseConfiguration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CostCenterwiseConfigurationExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CostCenterwiseConfigurationExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadCostCenterwiseConfigurationbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadCostCenterwiseConfigurationbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllCostCenterwiseConfiguration">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllCostCenterwiseConfiguration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadCostCenterwiseConfiguration">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadCostCenterwiseConfiguration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCostCenterwiseConfiguration">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateCostCenterwiseConfiguration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCostCenterwiseConfiguration">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteCostCenterwiseConfiguration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateGeneralLedgerAccount">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateGeneralLedgerAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadGeneralLedgerAccountbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadGeneralLedgerAccountbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllGeneralLedgerAccount">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllGeneralLedgerAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadGeneralLedgerAccount">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadGeneralLedgerAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGeneralLedgerAccount">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateGeneralLedgerAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteGeneralLedgerAccount">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteGeneralLedgerAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GeneralLedgerAccountExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/GeneralLedgerAccountExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryGeneralLedgerAccount">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryGeneralLedgerAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCurrency">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateCurrency" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadCurrencyByKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadCurrencyByKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllCurrency">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllCurrency" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCurrency">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateCurrency" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCurrency">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteCurrency" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExistCurrency">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ExistCurrency" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryCurrency">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryCurrency" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateEmployee">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeebyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadEmployeebyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllEmployee">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployee">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEmployee">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEmployee">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/EmployeeExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryEmployee">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateEmployeePD">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateEmployeePD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeePDbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadEmployeePDbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllEmployeePD">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllEmployeePD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeePD">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadEmployeePD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEmployeePD">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateEmployeePD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEmployeePD">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteEmployeePD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmployeePDExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/EmployeePDExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryEmployeePD">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryEmployeePD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateEmployeeJI">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateEmployeeJI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeeJIbyKey">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadEmployeeJIbyKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllEmployeeJI">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadAllEmployeeJI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployeeJI">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/ReadEmployeeJI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEmployeeJI">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/UpdateEmployeeJI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEmployeeJI">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/DeleteEmployeeJI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeJIExists">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/EmployeeJIExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryEmployeeJI">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/QueryEmployeeJI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateEmployeeJS">
+      <soap:operation soapAction="http://www.SmartBiz.com/MDMAPI/MdmService/CreateEmployeeJS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MdmService">
+    <wsdl:port name="BasicHttpBinding_MdmService" binding="tns:BasicHttpBinding_MdmService">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/SmartBiz.MDMAPI.Service/MdmService/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

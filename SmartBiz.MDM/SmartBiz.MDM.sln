@@ -1,0 +1,146 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Architectural Design", "_Architectural Design", "{F33A54E4-A611-42CC-94C9-ACCB35AC9A66}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application Tier", "Application Tier", "{7044746A-F1FF-45C4-9FB8-B8E4ED5643A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data Tier", "Data Tier", "{81CDFA74-C44E-4F8C-A63C-B7B38C35E4BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation Tier", "Presentation Tier", "{27721DEE-978C-489E-B68A-02E080F5EE61}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "References", "References", "{873D60C8-C642-4380-A8D0-B90E2C5CAEEE}"
+	ProjectSection(SolutionItems) = preProject
+		References\SmartBiz.PCSAPI.Common.dll = References\SmartBiz.PCSAPI.Common.dll
+		References\SmartBiz.Services.Base.dll = References\SmartBiz.Services.Base.dll
+		References\SmartBiz.Util.dll = References\SmartBiz.Util.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API Layer", "API Layer", "{5844C49D-4D35-4CBC-82E4-D84FB7373761}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service Layer", "Service Layer", "{6187B33E-3D97-4628-A6E6-E2C82A8CC419}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SmartBiz.MDM.Data", "Data Tier\SmartBiz.MDM.Data\SmartBiz.MDM.Data.sqlproj", "{A3D2F001-2F47-4980-9F63-02E730BF989A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartBiz.MDMAPI", "Application Tier\SmartBiz.MDMAPI\SmartBiz.MDMAPI.csproj", "{1BF2D967-4857-4311-BAAE-467F577600A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartBiz.MDMAPI.Common", "Application Tier\SmartBiz.MDMAPI.Common\SmartBiz.MDMAPI.Common.csproj", "{81C954FF-91F7-4D04-8C23-2A0D6D284724}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartBiz.MDMAPI.Service", "Application Tier\SmartBiz.MDMAPI.Service\SmartBiz.MDMAPI.Service.csproj", "{15B3E0D2-6217-493A-A690-158C497F5318}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{31BC8536-745E-4A6B-AD54-B21C8AADA5F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartBiz.MDM.Presentation", "Presentation Tier\SmartBiz.MDM.Presentation.csproj", "{6C47C9AE-D6A1-4818-9608-77A72A103D56}"
+	ProjectSection(ProjectDependencies) = postProject
+		{15B3E0D2-6217-493A-A690-158C497F5318} = {15B3E0D2-6217-493A-A690-158C497F5318}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reports", "Reports", "{2599F101-4BDF-48CD-8499-36EBA43EB8BC}"
+	ProjectSection(SolutionItems) = preProject
+		..\Reports\Active Agents .rdl = ..\Reports\Active Agents .rdl
+		..\Reports\Active Brokers.rdl = ..\Reports\Active Brokers.rdl
+		..\Reports\Active Salesman .rdl = ..\Reports\Active Salesman .rdl
+		..\Reports\Customer Countries.rdl = ..\Reports\Customer Countries.rdl
+		..\Reports\Customer Credit Limit.rdl = ..\Reports\Customer Credit Limit.rdl
+		..\Reports\Customer Regions.rdl = ..\Reports\Customer Regions.rdl
+		..\Reports\Inactive Agents .rdl = ..\Reports\Inactive Agents .rdl
+		..\Reports\Inactive Brokers.rdl = ..\Reports\Inactive Brokers.rdl
+		..\Reports\Inactive Salesman .rdl = ..\Reports\Inactive Salesman .rdl
+		..\Reports\Standard Rate fluctuations.rdl = ..\Reports\Standard Rate fluctuations.rdl
+		..\Reports\Supplier Countries .rdl = ..\Reports\Supplier Countries .rdl
+		..\Reports\Supplier credit limits.rdl = ..\Reports\Supplier credit limits.rdl
+		..\Reports\Supplier Region Report .rdl = ..\Reports\Supplier Region Report .rdl
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BenchMark", "BenchMark\BenchMark.csproj", "{0A2F1231-8C54-43FA-A317-8A7756C0C14A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{15B3E0D2-6217-493A-A690-158C497F5318} = {15B3E0D2-6217-493A-A690-158C497F5318}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://sep002.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Application\u0020Tier\\SmartBiz.MDMAPI.Common\\SmartBiz.MDMAPI.Common.csproj
+		SccProjectTopLevelParentUniqueName1 = SmartBiz.MDM.sln
+		SccProjectName1 = Application\u0020Tier/SmartBiz.MDMAPI.Common
+		SccLocalPath1 = Application\u0020Tier\\SmartBiz.MDMAPI.Common
+		SccProjectUniqueName2 = Application\u0020Tier\\SmartBiz.MDMAPI.Service\\SmartBiz.MDMAPI.Service.csproj
+		SccProjectTopLevelParentUniqueName2 = SmartBiz.MDM.sln
+		SccProjectName2 = Application\u0020Tier/SmartBiz.MDMAPI.Service
+		SccLocalPath2 = Application\u0020Tier\\SmartBiz.MDMAPI.Service
+		SccProjectUniqueName3 = Application\u0020Tier\\SmartBiz.MDMAPI\\SmartBiz.MDMAPI.csproj
+		SccProjectTopLevelParentUniqueName3 = SmartBiz.MDM.sln
+		SccProjectName3 = Application\u0020Tier/SmartBiz.MDMAPI
+		SccLocalPath3 = Application\u0020Tier\\SmartBiz.MDMAPI
+		SccProjectUniqueName4 = Data\u0020Tier\\SmartBiz.MDM.Data\\SmartBiz.MDM.Data.sqlproj
+		SccProjectTopLevelParentUniqueName4 = SmartBiz.MDM.sln
+		SccProjectName4 = Data\u0020Tier/SmartBiz.MDM.Data
+		SccLocalPath4 = Data\u0020Tier\\SmartBiz.MDM.Data
+		SccProjectUniqueName5 = Database\\Database.csproj
+		SccProjectTopLevelParentUniqueName5 = SmartBiz.MDM.sln
+		SccProjectName5 = Database
+		SccLocalPath5 = Database
+		SccProjectUniqueName6 = Presentation\u0020Tier\\SmartBiz.MDM.Presentation.csproj
+		SccProjectTopLevelParentUniqueName6 = SmartBiz.MDM.sln
+		SccProjectName6 = Presentation\u0020Tier
+		SccLocalPath6 = Presentation\u0020Tier
+		SccProjectUniqueName7 = BenchMark\\BenchMark.csproj
+		SccProjectTopLevelParentUniqueName7 = SmartBiz.MDM.sln
+		SccProjectName7 = BenchMark
+		SccLocalPath7 = BenchMark
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3D2F001-2F47-4980-9F63-02E730BF989A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3D2F001-2F47-4980-9F63-02E730BF989A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3D2F001-2F47-4980-9F63-02E730BF989A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3D2F001-2F47-4980-9F63-02E730BF989A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1BF2D967-4857-4311-BAAE-467F577600A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BF2D967-4857-4311-BAAE-467F577600A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BF2D967-4857-4311-BAAE-467F577600A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BF2D967-4857-4311-BAAE-467F577600A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81C954FF-91F7-4D04-8C23-2A0D6D284724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81C954FF-91F7-4D04-8C23-2A0D6D284724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81C954FF-91F7-4D04-8C23-2A0D6D284724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81C954FF-91F7-4D04-8C23-2A0D6D284724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31BC8536-745E-4A6B-AD54-B21C8AADA5F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31BC8536-745E-4A6B-AD54-B21C8AADA5F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31BC8536-745E-4A6B-AD54-B21C8AADA5F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31BC8536-745E-4A6B-AD54-B21C8AADA5F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C47C9AE-D6A1-4818-9608-77A72A103D56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C47C9AE-D6A1-4818-9608-77A72A103D56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C47C9AE-D6A1-4818-9608-77A72A103D56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C47C9AE-D6A1-4818-9608-77A72A103D56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A2F1231-8C54-43FA-A317-8A7756C0C14A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A2F1231-8C54-43FA-A317-8A7756C0C14A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A2F1231-8C54-43FA-A317-8A7756C0C14A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A2F1231-8C54-43FA-A317-8A7756C0C14A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5844C49D-4D35-4CBC-82E4-D84FB7373761} = {7044746A-F1FF-45C4-9FB8-B8E4ED5643A7}
+		{6187B33E-3D97-4628-A6E6-E2C82A8CC419} = {7044746A-F1FF-45C4-9FB8-B8E4ED5643A7}
+		{2599F101-4BDF-48CD-8499-36EBA43EB8BC} = {7044746A-F1FF-45C4-9FB8-B8E4ED5643A7}
+		{A3D2F001-2F47-4980-9F63-02E730BF989A} = {81CDFA74-C44E-4F8C-A63C-B7B38C35E4BA}
+		{31BC8536-745E-4A6B-AD54-B21C8AADA5F9} = {81CDFA74-C44E-4F8C-A63C-B7B38C35E4BA}
+		{6C47C9AE-D6A1-4818-9608-77A72A103D56} = {27721DEE-978C-489E-B68A-02E080F5EE61}
+		{0A2F1231-8C54-43FA-A317-8A7756C0C14A} = {27721DEE-978C-489E-B68A-02E080F5EE61}
+		{1BF2D967-4857-4311-BAAE-467F577600A3} = {5844C49D-4D35-4CBC-82E4-D84FB7373761}
+		{81C954FF-91F7-4D04-8C23-2A0D6D284724} = {5844C49D-4D35-4CBC-82E4-D84FB7373761}
+		{15B3E0D2-6217-493A-A690-158C497F5318} = {6187B33E-3D97-4628-A6E6-E2C82A8CC419}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,904 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+  <xs:complexType name="ResultDTOOfHR_EMP_WARNINGSQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="HR_EMP_WARNINGS" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q1:ArrayOfHR_EMP_WARNINGS" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfHR_EMP_WARNINGSQs8NXess" nillable="true" type="tns:ResultDTOOfHR_EMP_WARNINGSQs8NXess" />
+  <xs:complexType name="ResultDTOOfHR_EMP_QUALIFICATIONQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="HR_EMP_QUALIFICATION" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q2:ArrayOfHR_EMP_QUALIFICATION" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfHR_EMP_QUALIFICATIONQs8NXess" nillable="true" type="tns:ResultDTOOfHR_EMP_QUALIFICATIONQs8NXess" />
+  <xs:complexType name="ResultDTOOfHR_EMP_WORK_EXPERIENCEQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="HR_EMP_WORK_EXPERIENCE" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q3:ArrayOfHR_EMP_WORK_EXPERIENCE" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfHR_EMP_WORK_EXPERIENCEQs8NXess" nillable="true" type="tns:ResultDTOOfHR_EMP_WORK_EXPERIENCEQs8NXess" />
+  <xs:complexType name="ResultDTOOfHR_CASH_BENEFITQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="HR_CASH_BENEFIT" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q4:ArrayOfHR_CASH_BENEFIT" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfHR_CASH_BENEFITQs8NXess" nillable="true" type="tns:ResultDTOOfHR_CASH_BENEFITQs8NXess" />
+  <xs:complexType name="ResultDTOOfHR_NONCASH_BENEFITQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="HR_NONCASH_BENEFIT" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q5:ArrayOfHR_NONCASH_BENEFIT" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfHR_NONCASH_BENEFITQs8NXess" nillable="true" type="tns:ResultDTOOfHR_NONCASH_BENEFITQs8NXess" />
+  <xs:complexType name="ResultDTOOfHR_EMP_CASH_BENEFITQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="HR_EMP_CASH_BENEFIT" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q6:ArrayOfHR_EMP_CASH_BENEFIT" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfHR_EMP_CASH_BENEFITQs8NXess" nillable="true" type="tns:ResultDTOOfHR_EMP_CASH_BENEFITQs8NXess" />
+  <xs:complexType name="ResultDTOOfHR_EMP_NONCASH_BENEFITQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="HR_EMP_NONCASH_BENEFIT" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q7:ArrayOfHR_EMP_NONCASH_BENEFIT" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfHR_EMP_NONCASH_BENEFITQs8NXess" nillable="true" type="tns:ResultDTOOfHR_EMP_NONCASH_BENEFITQs8NXess" />
+  <xs:complexType name="ResultDTOOfHR_EMP_BASICSALARYQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="HR_EMP_BASICSALARY" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q8:ArrayOfHR_EMP_BASICSALARY" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfHR_EMP_BASICSALARYQs8NXess" nillable="true" type="tns:ResultDTOOfHR_EMP_BASICSALARYQs8NXess" />
+  <xs:complexType name="ResultDTOOfHR_EMP_REPORTTOQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="HR_EMP_REPORTTO" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q9:ArrayOfHR_EMP_REPORTTO" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfHR_EMP_REPORTTOQs8NXess" nillable="true" type="tns:ResultDTOOfHR_EMP_REPORTTOQs8NXess" />
+  <xs:complexType name="ResultDTOOfHR_EMP_JOBSPECQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="HR_EMP_JOBSPEC" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q10:ArrayOfHR_EMP_JOBSPEC" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfHR_EMP_JOBSPECQs8NXess" nillable="true" type="tns:ResultDTOOfHR_EMP_JOBSPECQs8NXess" />
+  <xs:complexType name="ResultDTOOfHR_CURRENCYQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="HR_CURRENCY" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q11:ArrayOfHR_CURRENCY" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfHR_CURRENCYQs8NXess" nillable="true" type="tns:ResultDTOOfHR_CURRENCYQs8NXess" />
+  <xs:complexType name="ResultDTOOfHR_LANGUAGEQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="HR_LANGUAGE" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q12:ArrayOfHR_LANGUAGE" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfHR_LANGUAGEQs8NXess" nillable="true" type="tns:ResultDTOOfHR_LANGUAGEQs8NXess" />
+  <xs:complexType name="ResultDTOOfHR_EMP_LANGUAGEQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="HR_EMP_LANGUAGE" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q13:ArrayOfHR_EMP_LANGUAGE" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfHR_EMP_LANGUAGEQs8NXess" nillable="true" type="tns:ResultDTOOfHR_EMP_LANGUAGEQs8NXess" />
+  <xs:complexType name="ResultDTOOfFIN_PrimaryTransactionQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="FIN_PrimaryTransaction" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q14:ArrayOfFIN_PrimaryTransaction" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfFIN_PrimaryTransactionQs8NXess" nillable="true" type="tns:ResultDTOOfFIN_PrimaryTransactionQs8NXess" />
+  <xs:complexType name="ResultDTOOfFIN_ProfitLostTypeQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="FIN_ProfitLostType" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q15:ArrayOfFIN_ProfitLostType" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfFIN_ProfitLostTypeQs8NXess" nillable="true" type="tns:ResultDTOOfFIN_ProfitLostTypeQs8NXess" />
+  <xs:complexType name="ResultDTOOfFIN_SpecialAccountTypeQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="FIN_SpecialAccountType" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q16:ArrayOfFIN_SpecialAccountType" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfFIN_SpecialAccountTypeQs8NXess" nillable="true" type="tns:ResultDTOOfFIN_SpecialAccountTypeQs8NXess" />
+  <xs:complexType name="ResultDTOOfFIN_TxnReferenceQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="FIN_TxnReference" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q17:ArrayOfFIN_TxnReference" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfFIN_TxnReferenceQs8NXess" nillable="true" type="tns:ResultDTOOfFIN_TxnReferenceQs8NXess" />
+  <xs:complexType name="ResultDTOOfFIN_CurrencyExchangeRateQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="FIN_CurrencyExchangeRate" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q18:ArrayOfFIN_CurrencyExchangeRate" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfFIN_CurrencyExchangeRateQs8NXess" nillable="true" type="tns:ResultDTOOfFIN_CurrencyExchangeRateQs8NXess" />
+  <xs:complexType name="ResultDTOOfERP_ProcessControlQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ERP_ProcessControl" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q19:ArrayOfERP_ProcessControl" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfERP_ProcessControlQs8NXess" nillable="true" type="tns:ResultDTOOfERP_ProcessControlQs8NXess" />
+  <xs:complexType name="ResultDTOOfERP_PeriodQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ERP_Period" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q20:ArrayOfERP_Period" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfERP_PeriodQs8NXess" nillable="true" type="tns:ResultDTOOfERP_PeriodQs8NXess" />
+  <xs:complexType name="ResultDTOOfHR_EMP_EMERGENCYQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="HR_EMP_EMERGENCY" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q21:ArrayOfHR_EMP_EMERGENCY" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfHR_EMP_EMERGENCYQs8NXess" nillable="true" type="tns:ResultDTOOfHR_EMP_EMERGENCYQs8NXess" />
+  <xs:complexType name="ResultDTOOfHR_EMP_TRANSPORTQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="HR_EMP_TRANSPORT" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q22:ArrayOfHR_EMP_TRANSPORT" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfHR_EMP_TRANSPORTQs8NXess" nillable="true" type="tns:ResultDTOOfHR_EMP_TRANSPORTQs8NXess" />
+  <xs:complexType name="ResultDTOOfHR_EMP_TRAININGSQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="HR_EMP_TRAININGS" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q23:ArrayOfHR_EMP_TRAININGS" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfHR_EMP_TRAININGSQs8NXess" nillable="true" type="tns:ResultDTOOfHR_EMP_TRAININGSQs8NXess" />
+  <xs:complexType name="ResultDTOOfHR_EMPLOYEE_JSQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="HR_EMPLOYEE_JS" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q24:ArrayOfHR_EMPLOYEE_JS" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfHR_EMPLOYEE_JSQs8NXess" nillable="true" type="tns:ResultDTOOfHR_EMPLOYEE_JSQs8NXess" />
+  <xs:complexType name="ResultDTOOfHR_EMPLOYEE_TDQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="HR_EMPLOYEE_TD" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q25:ArrayOfHR_EMPLOYEE_TD" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfHR_EMPLOYEE_TDQs8NXess" nillable="true" type="tns:ResultDTOOfHR_EMPLOYEE_TDQs8NXess" />
+  <xs:complexType name="ResultDTOOfHR_EMPLOYEE_PCQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="HR_EMPLOYEE_PC" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q26:ArrayOfHR_EMPLOYEE_PC" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfHR_EMPLOYEE_PCQs8NXess" nillable="true" type="tns:ResultDTOOfHR_EMPLOYEE_PCQs8NXess" />
+  <xs:complexType name="ResultDTOOfHR_EMPLOYEE_CDWDQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="HR_EMPLOYEE_CDWD" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q27:ArrayOfHR_EMPLOYEE_CDWD" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfHR_EMPLOYEE_CDWDQs8NXess" nillable="true" type="tns:ResultDTOOfHR_EMPLOYEE_CDWDQs8NXess" />
+  <xs:complexType name="ResultDTOOfHR_EMPLOYEE_OCQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="HR_EMPLOYEE_OC" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q28:ArrayOfHR_EMPLOYEE_OC" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfHR_EMPLOYEE_OCQs8NXess" nillable="true" type="tns:ResultDTOOfHR_EMPLOYEE_OCQs8NXess" />
+  <xs:complexType name="ResultDTOOfHR_EMPLOYEE_EIM_WSQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="HR_EMPLOYEE_EIM_WS" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q29:ArrayOfHR_EMPLOYEE_EIM_WS" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfHR_EMPLOYEE_EIM_WSQs8NXess" nillable="true" type="tns:ResultDTOOfHR_EMPLOYEE_EIM_WSQs8NXess" />
+  <xs:complexType name="ResultDTOOfHR_NATIONALITYQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="HR_NATIONALITY" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q30:ArrayOfHR_NATIONALITY" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfHR_NATIONALITYQs8NXess" nillable="true" type="tns:ResultDTOOfHR_NATIONALITYQs8NXess" />
+  <xs:complexType name="ResultDTOOfHR_RELIGIONQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="HR_RELIGION" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q31:ArrayOfHR_RELIGION" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfHR_RELIGIONQs8NXess" nillable="true" type="tns:ResultDTOOfHR_RELIGIONQs8NXess" />
+  <xs:complexType name="ResultDTOOfHR_SALARY_GRADEQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="HR_SALARY_GRADE" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q32:ArrayOfHR_SALARY_GRADE" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfHR_SALARY_GRADEQs8NXess" nillable="true" type="tns:ResultDTOOfHR_SALARY_GRADEQs8NXess" />
+  <xs:complexType name="ResultDTOOfHR_CORPORATE_TITLEQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="HR_CORPORATE_TITLE" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q33:ArrayOfHR_CORPORATE_TITLE" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfHR_CORPORATE_TITLEQs8NXess" nillable="true" type="tns:ResultDTOOfHR_CORPORATE_TITLEQs8NXess" />
+  <xs:complexType name="ResultDTOOfHR_DESIGNATIONQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="HR_DESIGNATION" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q34:ArrayOfHR_DESIGNATION" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfHR_DESIGNATIONQs8NXess" nillable="true" type="tns:ResultDTOOfHR_DESIGNATIONQs8NXess" />
+  <xs:complexType name="ResultDTOOfHR_JD_CATEGORYQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="HR_JD_CATEGORY" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q35:ArrayOfHR_JD_CATEGORY" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfHR_JD_CATEGORYQs8NXess" nillable="true" type="tns:ResultDTOOfHR_JD_CATEGORYQs8NXess" />
+  <xs:complexType name="ResultDTOOfERP_FixedTxnAttributesQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ERP_FixedTxnAttributes" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q36:ArrayOfERP_FixedTxnAttributes" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfERP_FixedTxnAttributesQs8NXess" nillable="true" type="tns:ResultDTOOfERP_FixedTxnAttributesQs8NXess" />
+  <xs:complexType name="ResultDTOOfERP_LastTransactionInfoQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ERP_LastTransactionInfo" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q37:ArrayOfERP_LastTransactionInfo" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfERP_LastTransactionInfoQs8NXess" nillable="true" type="tns:ResultDTOOfERP_LastTransactionInfoQs8NXess" />
+  <xs:complexType name="ResultDTOOfFIN_AccountSubTypeQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="FIN_AccountSubType" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q38:ArrayOfFIN_AccountSubType" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfFIN_AccountSubTypeQs8NXess" nillable="true" type="tns:ResultDTOOfFIN_AccountSubTypeQs8NXess" />
+  <xs:complexType name="ResultDTOOfFIN_AccountSubTypeCategoryQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="FIN_AccountSubTypeCategory" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q39:ArrayOfFIN_AccountSubTypeCategory" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfFIN_AccountSubTypeCategoryQs8NXess" nillable="true" type="tns:ResultDTOOfFIN_AccountSubTypeCategoryQs8NXess" />
+  <xs:complexType name="ResultDTOOfFIN_AccountTypeQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="FIN_AccountType" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q40:ArrayOfFIN_AccountType" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfFIN_AccountTypeQs8NXess" nillable="true" type="tns:ResultDTOOfFIN_AccountTypeQs8NXess" />
+  <xs:complexType name="ResultDTOOfFIN_BankQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="FIN_Bank" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q41:ArrayOfFIN_Bank" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfFIN_BankQs8NXess" nillable="true" type="tns:ResultDTOOfFIN_BankQs8NXess" />
+  <xs:complexType name="ResultDTOOfFIN_BankAccountQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="FIN_BankAccount" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q42:ArrayOfFIN_BankAccount" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfFIN_BankAccountQs8NXess" nillable="true" type="tns:ResultDTOOfFIN_BankAccountQs8NXess" />
+  <xs:complexType name="ResultDTOOfFIN_BankBranchQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="FIN_BankBranch" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q43:ArrayOfFIN_BankBranch" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfFIN_BankBranchQs8NXess" nillable="true" type="tns:ResultDTOOfFIN_BankBranchQs8NXess" />
+  <xs:complexType name="ResultDTOOfFIN_ControledTransactionQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="FIN_ControledTransaction" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q44:ArrayOfFIN_ControledTransaction" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfFIN_ControledTransactionQs8NXess" nillable="true" type="tns:ResultDTOOfFIN_ControledTransactionQs8NXess" />
+  <xs:complexType name="ResultDTOOfERP_AgentBrokerSalesManQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ERP_AgentBrokerSalesMan" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q45:ArrayOfERP_AgentBrokerSalesMan" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfERP_AgentBrokerSalesManQs8NXess" nillable="true" type="tns:ResultDTOOfERP_AgentBrokerSalesManQs8NXess" />
+  <xs:complexType name="ResultDTOOfERP_UnitConversionQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ERP_UnitConversion" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q46:ArrayOfERP_UnitConversion" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfERP_UnitConversionQs8NXess" nillable="true" type="tns:ResultDTOOfERP_UnitConversionQs8NXess" />
+  <xs:complexType name="ResultDTOOfERP_UnitDefinitionQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ERP_UnitDefinition" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q47:ArrayOfERP_UnitDefinition" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfERP_UnitDefinitionQs8NXess" nillable="true" type="tns:ResultDTOOfERP_UnitDefinitionQs8NXess" />
+  <xs:complexType name="ResultDTOOfFIN_RegionQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="FIN_Region" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q48:ArrayOfFIN_Region" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfFIN_RegionQs8NXess" nillable="true" type="tns:ResultDTOOfFIN_RegionQs8NXess" />
+  <xs:complexType name="ResultDTOOfFIN_AreaQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="FIN_Area" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q49:ArrayOfFIN_Area" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfFIN_AreaQs8NXess" nillable="true" type="tns:ResultDTOOfFIN_AreaQs8NXess" />
+  <xs:complexType name="ResultDTOOfERP_DocumentQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ERP_Document" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q50:ArrayOfERP_Document" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfERP_DocumentQs8NXess" nillable="true" type="tns:ResultDTOOfERP_DocumentQs8NXess" />
+  <xs:complexType name="ResultDTOOfERP_DocumentAttributesQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ERP_DocumentAttributes" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q51:ArrayOfERP_DocumentAttributes" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfERP_DocumentAttributesQs8NXess" nillable="true" type="tns:ResultDTOOfERP_DocumentAttributesQs8NXess" />
+  <xs:complexType name="ResultDTOOfERP_DocumentAttributesBankInfoQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ERP_DocumentAttributesBankInfo" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q52:ArrayOfERP_DocumentAttributesBankInfo" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfERP_DocumentAttributesBankInfoQs8NXess" nillable="true" type="tns:ResultDTOOfERP_DocumentAttributesBankInfoQs8NXess" />
+  <xs:complexType name="ResultDTOOfERP_DocumentAttributesRefQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ERP_DocumentAttributesRef" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q53:ArrayOfERP_DocumentAttributesRef" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfERP_DocumentAttributesRefQs8NXess" nillable="true" type="tns:ResultDTOOfERP_DocumentAttributesRefQs8NXess" />
+  <xs:complexType name="ResultDTOOfFIN_CostCenterQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="FIN_CostCenter" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q54:ArrayOfFIN_CostCenter" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfFIN_CostCenterQs8NXess" nillable="true" type="tns:ResultDTOOfFIN_CostCenterQs8NXess" />
+  <xs:complexType name="ResultDTOOfFIN_CostCenterwiseConfigurationQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="FIN_CostCenterwiseConfiguration" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q55:ArrayOfFIN_CostCenterwiseConfiguration" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfFIN_CostCenterwiseConfigurationQs8NXess" nillable="true" type="tns:ResultDTOOfFIN_CostCenterwiseConfigurationQs8NXess" />
+  <xs:complexType name="ResultDTOOfFIN_GeneralLedgerAccountQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="FIN_GeneralLedgerAccount" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q56="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q56:ArrayOfFIN_GeneralLedgerAccount" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfFIN_GeneralLedgerAccountQs8NXess" nillable="true" type="tns:ResultDTOOfFIN_GeneralLedgerAccountQs8NXess" />
+  <xs:complexType name="ResultDTOOfFIN_CurrencyQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="FIN_Currency" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q57:ArrayOfFIN_Currency" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfFIN_CurrencyQs8NXess" nillable="true" type="tns:ResultDTOOfFIN_CurrencyQs8NXess" />
+  <xs:complexType name="ResultDTOOfHR_EMPLOYEEQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="HR_EMPLOYEE" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q58:ArrayOfHR_EMPLOYEE" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfHR_EMPLOYEEQs8NXess" nillable="true" type="tns:ResultDTOOfHR_EMPLOYEEQs8NXess" />
+  <xs:complexType name="ResultDTOOfHR_EMPLOYEE_PDQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="HR_EMPLOYEE_PD" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q59:ArrayOfHR_EMPLOYEE_PD" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfHR_EMPLOYEE_PDQs8NXess" nillable="true" type="tns:ResultDTOOfHR_EMPLOYEE_PDQs8NXess" />
+  <xs:complexType name="ResultDTOOfHR_EMPLOYEE_JIQs8NXess">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultDTOOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="HR_EMPLOYEE_JI" Namespace="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LocalResultCount" type="xs:int" />
+      <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/SmartBiz.MDMAPI.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q60:ArrayOfHR_EMPLOYEE_JI" />
+      <xs:element minOccurs="0" name="TotalResultCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultDTOOfHR_EMPLOYEE_JIQs8NXess" nillable="true" type="tns:ResultDTOOfHR_EMPLOYEE_JIQs8NXess" />
+</xs:schema>

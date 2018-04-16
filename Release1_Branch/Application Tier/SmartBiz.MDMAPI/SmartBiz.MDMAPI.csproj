@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1BF2D967-4857-4311-BAAE-467F577600A3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SmartBiz.MDMAPI</RootNamespace>
+    <AssemblyName>SmartBiz.MDMAPI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <OutputType>Library</OutputType>
+    <AssemblyName>FM100</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <OutputType>Library</OutputType>
+    <AssemblyName>FM100</AssemblyName>
+    <AssemblyName>FM100</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="SmartBiz.PCSAPI.Common">
+      <HintPath>..\..\References\SmartBiz.PCSAPI.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SmartBiz.Services.Base">
+      <HintPath>..\..\References\SmartBiz.Services.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="SmartBiz.Util">
+      <HintPath>..\..\References\SmartBiz.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="API\FM100.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="API\HR100.cs" />
+    <Compile Include="API\Queries\AccountSubTypeCategoryQuery.cs" />
+    <Compile Include="API\Queries\HRCashBenefitQuery.cs" />
+    <Compile Include="API\Queries\HREmpCashBenefitsQuery.cs" />
+    <Compile Include="API\Queries\HREmpNonCashBenefitsQuery.cs" />
+    <Compile Include="API\Queries\HRNonCashBenefitQuery.cs" />
+    <Compile Include="API\Queries\HRWorkExperienceQuery.cs" />
+    <Compile Include="API\Queries\HRQualificationQuery.cs" />
+    <Compile Include="API\Queries\AccountSubTypeQuery.cs" />
+    <Compile Include="API\Queries\AccountTypeQuery.cs" />
+    <Compile Include="API\Queries\AgentBrokerSalesManQuery.cs" />
+    <Compile Include="API\Queries\ControlledTransactionQuery.cs" />
+    <Compile Include="API\Queries\AreaQuery.cs" />
+    <Compile Include="API\Queries\BankAccountQuery.cs" />
+    <Compile Include="API\Queries\BankBranchQuery.cs" />
+    <Compile Include="API\Queries\BankQuery.cs" />
+    <Compile Include="API\Queries\CorporateTitleQuery.cs" />
+    <Compile Include="API\Queries\CurrencyExchangeRateQuery.cs" />
+    <Compile Include="API\Queries\CurrencyQuery.cs" />
+    <Compile Include="API\Queries\DesignationQuery.cs" />
+    <Compile Include="API\Queries\EmergencyQuery.cs" />
+    <Compile Include="API\Queries\EmployeeCDWDQuery.cs" />
+    <Compile Include="API\Queries\EmployeeEIMWSQuery.cs" />
+    <Compile Include="API\Queries\EmployeeJIQuery.cs" />
+    <Compile Include="API\Queries\EmployeeJSQuery.cs" />
+    <Compile Include="API\Queries\EmployeeOCQuery.cs" />
+    <Compile Include="API\Queries\EmployeePCQuery.cs" />
+    <Compile Include="API\Queries\EmployeePDQuery.cs" />
+    <Compile Include="API\Queries\EmployeeQuery.cs" />
+    <Compile Include="API\Queries\EmployeeTDQuery.cs" />
+    <Compile Include="API\Queries\FixedTxnAttributesQuery.cs" />
+    <Compile Include="API\Queries\GeneralLedgerAccountQuery.cs" />
+    <Compile Include="API\Queries\HRDependentQuery.cs" />
+    <Compile Include="API\Queries\CostCenterQuery.cs" />
+    <Compile Include="API\Queries\CostCenterwiseConfigurationQuery.cs" />
+    <Compile Include="API\Queries\DocumentAttributesBankInfoQuery.cs" />
+    <Compile Include="API\Queries\DocumentAttributesQuery.cs" />
+    <Compile Include="API\Queries\DocumentAttributesRefQuery.cs" />
+    <Compile Include="API\Queries\DocumentQuery.cs" />
+    <Compile Include="API\Queries\JDCategoryQuery.cs" />
+    <Compile Include="API\Queries\LastTransactionInfoQuery.cs" />
+    <Compile Include="API\Queries\NationalityQuery.cs" />
+    <Compile Include="API\Queries\PeriodQuery.cs" />
+    <Compile Include="API\Queries\PrimaryTransactionQuery.cs" />
+    <Compile Include="API\Queries\ProcessControlQuery.cs" />
+    <Compile Include="API\Queries\ReligionQuery.cs" />
+    <Compile Include="API\Queries\SalaryGradeQuery.cs" />
+    <Compile Include="API\Queries\SpecialAccountQuery.cs" />
+    <Compile Include="API\Queries\ProfitLostQuery.cs" />
+    <Compile Include="API\Queries\RegionQuery.cs" />
+    <Compile Include="API\Queries\SecondaryTransactionQuery.cs" />
+    <Compile Include="API\Queries\SubModuleQuery.cs" />
+    <Compile Include="API\Queries\TrainingQuery.cs" />
+    <Compile Include="API\Queries\TransactionReferenceQuery.cs" />
+    <Compile Include="API\Queries\TransportQuery.cs" />
+    <Compile Include="API\Queries\UnitConversionQuery.cs" />
+    <Compile Include="API\Queries\UnitDefinitionQuery.cs" />
+    <Compile Include="API\Queries\WarningQuery.cs" />
+    <Compile Include="Comments.cs" />
+    <Compile Include="Data\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="API\ResultDTO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="Data\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Data\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Data\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SmartBiz.MDMAPI.Common\SmartBiz.MDMAPI.Common.csproj">
+      <Project>{81c954ff-91f7-4d04-8c23-2a0d6d284724}</Project>
+      <Name>SmartBiz.MDMAPI.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

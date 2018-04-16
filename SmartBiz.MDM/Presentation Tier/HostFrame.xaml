@@ -1,0 +1,113 @@
+﻿    <!--Go all the way down this file to add your control -->
+    
+    <Window 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="SmartBiz.MDM.Presentation.HostFrame" 
+    xmlns:controls="clr-namespace:SmartBiz.MDM.Presentation"
+    WindowStartupLocation="CenterScreen"    
+    WindowStyle="None"
+    AllowsTransparency="True"    
+    ResizeMode="NoResize"
+    Background="Transparent"  FontSize="12"
+     WindowState="Maximized"
+    Title="Host" Focusable="True" 
+    >
+
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources\FunctionBoxTitleBarStyle.xaml" />
+          
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Window.Effect>
+        <DropShadowEffect RenderingBias="Performance" ShadowDepth="0" BlurRadius="10" Color="Blue" />
+    </Window.Effect>
+
+    <Grid Margin="10" Width="auto" Height="auto">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="279*" />
+            
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Border CornerRadius="2,2,0,0" BorderBrush="#FF003186" BorderThickness="1" Height="30"
+                    VerticalAlignment="Top">
+                <Grid x:Name="TitleBar"  Focusable="True">
+                    <Rectangle Height="28" VerticalAlignment="Top" Style="{StaticResource TitleBarStyle}" />
+                    <StackPanel Orientation="Horizontal">
+                        <Label x:Name="lbCompanyCode" Content="CCD" HorizontalAlignment="Left"
+                               FontWeight="Bold" Foreground="White" Margin="5,0,0,0">
+                            <Label.Effect>
+                                <DropShadowEffect Color="Black" RenderingBias="Performance" ShadowDepth="1" />
+                            </Label.Effect>
+                        </Label>
+                        <Label Content="-" Foreground="White">
+                            <Label.Effect>
+                                <DropShadowEffect Color="Black" RenderingBias="Performance" ShadowDepth="1" />
+                            </Label.Effect>
+                        </Label>
+                        <Label x:Name="lbTitle1" Content="Function Title" HorizontalAlignment="Left"
+                               FontWeight="ExtraBold" Foreground="White" Margin="5,0,0,0">
+                            <Label.Effect>
+                                <DropShadowEffect Color="Black" RenderingBias="Performance" ShadowDepth="1" />
+                            </Label.Effect>
+                        </Label>
+                        <Label Content="-" Foreground="White">
+                            <Label.Effect>
+                                <DropShadowEffect Color="Black" RenderingBias="Performance" ShadowDepth="1" />
+                            </Label.Effect>
+                        </Label>
+                        <Label x:Name="lbTitle2" Content="Sample Heading" HorizontalAlignment="Left" FontWeight="Bold"
+                               Foreground="White" Margin="5,0,0,0">
+                            <Label.Effect>
+                                <DropShadowEffect Color="Black" RenderingBias="Performance" ShadowDepth="1" />
+                            </Label.Effect>
+                        </Label>
+                    </StackPanel>
+                </Grid>
+            </Border>
+            <StackPanel x:Name="ControlButtonsStackPanel" Orientation="Horizontal" HorizontalAlignment="Right"
+                        Width="70">
+                <TextBlock x:Name="MinimizeButton" Text="ã" FontFamily="Wingdings" HorizontalAlignment="Right"
+                           VerticalAlignment="Top" MouseLeftButtonDown="MinimizeButton_MouseLeftButtonDown"
+                           RenderTransformOrigin="0.643,0.55" Margin="0,4,5,0" Height="22" TextAlignment="Center"
+                           Width="16" Foreground="White" FontSize="18"
+                           />
+                <StackPanel x:Name="MaximizeRestoreStackPanel" Orientation="Horizontal" Width="19" Height="20"
+                            Visibility="Visible">
+                    <TextBlock x:Name="ChangeViewButton" Text="2" FontFamily="Webdings" VerticalAlignment="Center"
+                               HorizontalAlignment="Center"
+                               Height="22" TextAlignment="Center" Visibility="Collapsed" Foreground="White"
+                               FontSize="18" />
+                    <TextBlock x:Name="MaximizeButton" Text="1" FontFamily="Webdings" HorizontalAlignment="Center"
+                               VerticalAlignment="Center" MouseLeftButtonDown="MaximizeButton_MouseLeftButtonDown"
+                               Height="22" TextAlignment="Center" Visibility="Visible" Foreground="White" FontSize="18"
+                               />
+                </StackPanel>
+                <TextBlock x:Name="CloseButton" Text="r" FontFamily="Webdings"
+                         HorizontalAlignment="Right" MouseLeftButtonDown="CloseButton_MouseLeftButtonDown"
+                           VerticalAlignment="Top" Height="22" TextAlignment="Center" Width="20" Margin="5,4,5,0"
+                           Foreground="White" FontSize="18"  />
+            </StackPanel>
+        </Grid>
+        <Border CornerRadius="0,0,2,2" BorderBrush="#FF003186" BorderThickness="1" Margin="0,29,0,0" Grid.RowSpan="3" />
+
+        <Grid Grid.Row="1" Margin="1,0,1,0">
+            <!--HERE -->
+            <controls:HREmployeeBank x:Name="CustomControl"/>
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFC0D2DE" Offset="1" />
+                    <GradientStop Color="#FFECECEC" />
+                </LinearGradientBrush>
+            </Grid.Background>            
+        </Grid>        
+    </Grid>
+</Window>
